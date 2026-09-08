@@ -27,21 +27,46 @@ export default function ServicesMatrix() {
       ? servicesData
       : servicesData.filter((item) => item.category === activeFilter);
 
+  const isInitialMount = useRef(true);
+
   useEffect(() => {
     const { gsap } = initGSAP();
 
     const ctx = gsap.context(() => {
-      gsap.from(".service-card", {
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-        },
-        opacity: 0,
-        y: 35,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power2.out",
-      });
+      if (isInitialMount.current) {
+        gsap.fromTo(
+          ".service-card",
+          { opacity: 0, y: 35 },
+          {
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 80%",
+              once: true,
+            },
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.08,
+            ease: "power2.out",
+            clearProps: "all",
+          }
+        );
+        isInitialMount.current = false;
+      } else {
+        gsap.fromTo(
+          ".service-card",
+          { opacity: 0, y: 20, scale: 0.98 },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.35,
+            stagger: 0.05,
+            ease: "power2.out",
+            clearProps: "all",
+          }
+        );
+      }
     }, sectionRef);
 
     return () => ctx.revert();

@@ -3,7 +3,8 @@ export interface SolutionOption {
   label: string;
   sublabel: string;
   sprintWeeks: number;
-  monthlySavings: number;
+  efficiencyGain: string;
+  adminHoursSaved: string;
   techRecommendation: string[];
   searchAdvantage: string;
 }

@@ -22,11 +22,13 @@ export default function PortfolioShowcase() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
+          once: true,
         },
         opacity: 0,
         y: 30,
         duration: 0.8,
         ease: "power2.out",
+        clearProps: "all",
       });
     }, sectionRef);
 
@@ -47,7 +49,7 @@ export default function PortfolioShowcase() {
             }}
           >
             Engineering In Action:{" "}
-            <span className="gradient-text-cyan-violet">Measurable Business ROI</span>
+            <span className="gradient-text-cyan-violet">Measurable Commercial Impact</span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
             Every project we deploy is built for tangible commercial outcomes: zero missed leads, extreme velocity, high user retention, and organic search superiority.
@@ -60,7 +62,9 @@ export default function PortfolioShowcase() {
           onSelect={setActiveProject}
         />
 
-        <CaseStudyCard project={activeProject} />
+        <div key={activeProject.id} className="case-study-animated-wrapper">
+          <CaseStudyCard project={activeProject} />
+        </div>
       </div>
     </section>
   );

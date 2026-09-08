@@ -96,7 +96,7 @@ export const portfolioProjects: ProjectCaseStudy[] = [
     stats: [
       { label: "Frontend Dev Speed", value: "+75%" },
       { label: "Page Dwell Time", value: "+84%" },
-      { label: "Seed Capital Raised", value: "$4.8M" },
+      { label: "Investor Backing", value: "Oversubscribed" },
       { label: "Design Token Reusability", value: "100%" }
     ],
     tags: ["Figma Tokens", "Adobe Animate", "HTML5 Canvas", "Canva Pro", "GSAP", "Vector SVG"]

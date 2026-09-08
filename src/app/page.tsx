@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
+import LogoShowcase from "@/components/ui/LogoShowcase";
 import ServicesMatrix from "@/components/services/ServicesMatrix";
 import VoicebotSimulator from "@/components/simulator/VoicebotSimulator";
 import PortfolioShowcase from "@/components/portfolio/PortfolioShowcase";
@@ -14,6 +15,9 @@ export default function Home() {
     <main style={{ minHeight: "100vh" }}>
       <Navbar />
       <Hero />
+      <div className="container" style={{ position: "relative", zIndex: 10 }}>
+        <LogoShowcase />
+      </div>
       <ServicesMatrix />
       <VoicebotSimulator />
       <PortfolioShowcase />

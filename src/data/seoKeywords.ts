@@ -47,7 +47,6 @@ export const jsonLdSchema = {
       "logo": "https://acstena.com/images/hero_digital_matrix.jpg",
       "image": "https://acstena.com/images/hero_digital_matrix.jpg",
       "description": siteConfig.description,
-      "priceRange": "$$$",
       "telephone": siteConfig.phone,
       "email": siteConfig.email,
       "address": {

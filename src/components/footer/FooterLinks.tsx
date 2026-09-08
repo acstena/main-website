@@ -135,7 +135,7 @@ export default function FooterLinks() {
           </li>
           <li>
             <Link href="#estimator" style={{ color: "inherit", textDecoration: "none" }}>
-              Calculate Your Project ROI
+              Architecture & Sprint Planner
             </Link>
           </li>
         </ul>

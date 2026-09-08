@@ -40,8 +40,8 @@ export const testimonialsList: Testimonial[] = [
     role: "Managing Partner",
     company: "Veloce Capital",
     quote:
-      "From pixel-perfect Figma design tokens to liquid-smooth 60fps Adobe Animate interactive motion graphics, the execution was world-class. Our seed roadshow closed $4.8M ahead of schedule.",
-    metric: "$4.8M Capital Secured",
+      "From pixel-perfect Figma design tokens to liquid-smooth 60fps Adobe Animate interactive motion graphics, the execution was world-class. Our seed roadshow closed oversubscribed ahead of schedule.",
+    metric: "Oversubscribed Seed Round",
     tag: "Figma UI/UX & Adobe Animate",
   },
 ];

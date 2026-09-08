@@ -55,7 +55,7 @@ export default function ContactDirectInfo() {
               24-Hour Scoping Proposal
             </div>
             <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
-              Receive a comprehensive technical specification, architecture diagram, and fixed milestone budget within 1 business day.
+              Receive a comprehensive technical specification, architecture diagram, and dedicated milestone delivery roadmap within 1 business day.
             </div>
           </div>
         </div>

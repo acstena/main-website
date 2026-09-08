@@ -6,16 +6,12 @@ import { SolutionOption } from "@/types";
 interface YieldDashboardProps {
   solution: SolutionOption;
   teamIndex: number;
-  calculatedSavings: number;
-  annualSavings: number;
   effectiveWeeks: number;
 }
 
 export default function YieldDashboard({
   solution,
   teamIndex,
-  calculatedSavings,
-  annualSavings,
   effectiveWeeks,
 }: YieldDashboardProps) {
   return (
@@ -52,7 +48,7 @@ export default function YieldDashboard({
                 color: "var(--accent-emerald)",
               }}
             >
-              Engineering Estimate
+              Engineering Scope
             </div>
             <div
               style={{
@@ -76,7 +72,7 @@ export default function YieldDashboard({
           </div>
         </div>
 
-        {/* Annualized Cost Recovery */}
+        {/* Operational Transformation Metric (Zero Prices) */}
         <div
           style={{
             padding: "1.5rem",
@@ -97,24 +93,21 @@ export default function YieldDashboard({
               color: "var(--accent-emerald)",
             }}
           >
-            Projected Annual Cost Recovery & Recaptured Revenue
+            Target Operational Transformation
           </div>
           <div
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "clamp(2.4rem, 4vw, 3.2rem)",
+              fontSize: "clamp(1.6rem, 3.2vw, 2.2rem)",
               fontWeight: 800,
               color: "#34d399",
               margin: "0.5rem 0",
             }}
           >
-            ${annualSavings.toLocaleString()}
-            <span style={{ fontSize: "1rem", fontWeight: 500, color: "var(--text-muted)" }}>
-              /year
-            </span>
+            {solution.efficiencyGain}
           </div>
           <div style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
-            Based on ${calculatedSavings.toLocaleString()}/mo in avoided manual payroll & recovered missed leads
+            {solution.adminHoursSaved} by eliminating manual bottlenecks
           </div>
         </div>
 

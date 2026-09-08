@@ -18,7 +18,22 @@ export default function Hero() {
     const { gsap } = initGSAP();
 
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+      const tl = gsap.timeline({
+        defaults: { ease: "power3.out" },
+        onComplete: () => {
+          gsap.set(
+            [
+              ".hero-pill",
+              headlineRef.current,
+              textRef.current,
+              ctaRef.current,
+              ".hero-visual-frame",
+              ".hero-stat-card",
+            ],
+            { clearProps: "all" }
+          );
+        },
+      });
 
       tl.from(".hero-pill", { opacity: 0, y: 20, duration: 0.6, delay: 0.1 })
         .from(headlineRef.current, { opacity: 0, y: 30, duration: 0.8 }, "-=0.3")
@@ -61,7 +76,7 @@ export default function Hero() {
                 <ArrowRight size={18} />
               </Link>
               <Link href="#estimator" className="btn-secondary">
-                <span>Calculate Project ROI</span>
+                <span>Plan Sprints & Tech Stack</span>
               </Link>
             </div>
 

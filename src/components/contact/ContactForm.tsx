@@ -20,7 +20,6 @@ export default function ContactForm() {
     email: "",
     company: "",
     phone: "",
-    budget: "$10,000 - $25,000",
     timeline: "Within 2 - 4 Weeks",
     message: "",
   });

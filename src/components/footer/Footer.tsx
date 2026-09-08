@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Cpu } from "lucide-react";
 import { siteConfig } from "@/data/seoKeywords";
 import { GithubIcon, LinkedinIcon, TwitterXIcon } from "@/components/ui/BrandIcons";
+import Logo from "@/components/ui/Logo";
 import FooterLinks from "./FooterLinks";
 import KeywordIndex from "./KeywordIndex";
 
@@ -31,23 +32,8 @@ export default function Footer() {
         >
           {/* Brand & Identity */}
           <div style={{ maxWidth: "340px" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", marginBottom: "1rem" }}>
-              <div
-                style={{
-                  width: "34px",
-                  height: "34px",
-                  borderRadius: "8px",
-                  background: "linear-gradient(135deg, #00f0ff, #8b5cf6)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Cpu size={18} color="#05070c" strokeWidth={2.5} />
-              </div>
-              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", letterSpacing: "-0.03em" }}>
-                acstena<span style={{ color: "var(--accent-cyan)" }}>.</span>
-              </div>
+            <div style={{ marginBottom: "1rem" }}>
+              <Logo size={36} />
             </div>
 
             <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", lineHeight: 1.6, marginBottom: "1.5rem" }}>
@@ -138,7 +124,7 @@ export default function Footer() {
           }}
         >
           <div>
-            &copy; {currentYear} AuraDigital Solutions Studio. All rights reserved. Precision-engineered with Next.js & GSAP.
+            &copy; {currentYear} acstena Studio. All rights reserved. Precision-engineered with Next.js & GSAP.
           </div>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             <Link href="#services" style={{ color: "inherit", textDecoration: "none" }}>

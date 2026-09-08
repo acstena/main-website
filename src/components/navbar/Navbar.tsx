@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight, Cpu } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import MobileDrawer from "./MobileDrawer";
+import Logo from "@/components/ui/Logo";
 
 const navLinks = [
   { label: "AI Solutions", href: "#voice-ai" },
@@ -11,7 +12,7 @@ const navLinks = [
   { label: "Mobile Apps", href: "#mobile-apps" },
   { label: "Design & Motion", href: "#design-motion" },
   { label: "Case Studies", href: "#case-studies" },
-  { label: "ROI Estimator", href: "#estimator" },
+  { label: "Sprint Planner", href: "#estimator" },
 ];
 
 export default function Navbar() {
@@ -31,32 +32,7 @@ export default function Navbar() {
       <div className={`nav-pill-container ${scrolled ? "scrolled" : ""}`}>
         {/* Brand Logo */}
         <Link href="/" className="nav-brand">
-          <div className="nav-brand-icon">
-            <Cpu size={20} color="#05070c" strokeWidth={2.5} />
-          </div>
-          <div>
-            <div
-              style={{
-                fontFamily: "var(--font-heading)",
-                fontWeight: 800,
-                fontSize: "1.15rem",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.1,
-              }}
-            >
-              AURA<span style={{ color: "var(--accent-cyan)" }}>DIGITAL</span>
-            </div>
-            <div
-              style={{
-                fontSize: "0.65rem",
-                color: "var(--text-muted)",
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-              }}
-            >
-              AI • Web • Mobile Studio
-            </div>
-          </div>
+          <Logo size={36} />
         </Link>
 
         {/* Desktop Navigation */}

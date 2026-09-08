@@ -3,7 +3,6 @@ export interface ContactFormData {
   email: string;
   company: string;
   phone: string;
-  budget: string;
   timeline: string;
   message: string;
 }

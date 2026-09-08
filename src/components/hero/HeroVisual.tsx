@@ -56,7 +56,7 @@ export default function HeroVisual() {
 
       {/* Floating Badge 1: AI Voice Agent */}
       <div
-        className="hero-stat-card glass-card"
+        className="hero-stat-card hero-floating-badge-1 glass-card"
         style={{
           position: "absolute",
           top: "-1.5rem",
@@ -67,7 +67,8 @@ export default function HeroVisual() {
           gap: "0.75rem",
           borderRadius: "var(--radius-md)",
           border: "1px solid rgba(0, 240, 255, 0.3)",
-          background: "rgba(10, 14, 26, 0.85)",
+          background: "rgba(10, 14, 26, 0.92)",
+          boxShadow: "0 15px 35px rgba(15, 23, 42, 0.25), 0 0 20px rgba(0, 240, 255, 0.15)",
         }}
       >
         <div
@@ -84,10 +85,10 @@ export default function HeroVisual() {
           <Bot size={20} color="var(--accent-cyan)" />
         </div>
         <div>
-          <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontWeight: 500 }}>
+          <div style={{ fontSize: "0.75rem", color: "#94a3b8", fontWeight: 500 }}>
             Inbound Voice AI
           </div>
-          <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text-primary)" }}>
+          <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "#f8fafc" }}>
             100% Calls Answered
           </div>
         </div>
@@ -95,7 +96,7 @@ export default function HeroVisual() {
 
       {/* Floating Badge 2: Google Search Ranking */}
       <div
-        className="hero-stat-card glass-card"
+        className="hero-stat-card hero-floating-badge-2 glass-card"
         style={{
           position: "absolute",
           bottom: "-2rem",
@@ -106,7 +107,8 @@ export default function HeroVisual() {
           gap: "0.75rem",
           borderRadius: "var(--radius-md)",
           border: "1px solid rgba(16, 185, 129, 0.3)",
-          background: "rgba(10, 14, 26, 0.85)",
+          background: "rgba(10, 14, 26, 0.92)",
+          boxShadow: "0 15px 35px rgba(15, 23, 42, 0.25), 0 0 20px rgba(16, 185, 129, 0.15)",
         }}
       >
         <div
@@ -123,10 +125,10 @@ export default function HeroVisual() {
           <TrendingUp size={20} color="var(--accent-emerald)" />
         </div>
         <div>
-          <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", fontWeight: 500 }}>
+          <div style={{ fontSize: "0.75rem", color: "#94a3b8", fontWeight: 500 }}>
             Search Optimization
           </div>
-          <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "var(--text-primary)" }}>
+          <div style={{ fontSize: "0.88rem", fontWeight: 700, color: "#f8fafc" }}>
             Rank #1 Commercial SERP
           </div>
         </div>
