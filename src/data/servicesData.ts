@@ -1,15 +1,4 @@
-export interface ServiceItem {
-  id: string;
-  category: "ai" | "web" | "mobile" | "design" | "animation" | "seo";
-  title: string;
-  tagline: string;
-  badge: string;
-  description: string;
-  deliverables: string[];
-  techStack: string[];
-  businessImpact: string;
-  iconName: string;
-}
+import { ServiceItem } from "@/types";
 
 export const servicesData: ServiceItem[] = [
   {

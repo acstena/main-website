@@ -1,16 +1,4 @@
-export interface ProjectCaseStudy {
-  id: string;
-  title: string;
-  category: string;
-  clientIndustry: string;
-  summary: string;
-  challenge: string;
-  solution: string;
-  image: string;
-  stats: { label: string; value: string }[];
-  tags: string[];
-  liveUrl?: string;
-}
+import { ProjectCaseStudy } from "@/types";
 
 export const portfolioProjects: ProjectCaseStudy[] = [
   {

@@ -1,13 +1,13 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import ServicesMatrix from "@/components/ServicesMatrix";
-import VoicebotSimulator from "@/components/VoicebotSimulator";
-import PortfolioShowcase from "@/components/PortfolioShowcase";
-import GoDigitalEstimator from "@/components/GoDigitalEstimator";
-import SeoTransformation from "@/components/SeoTransformation";
-import Testimonials from "@/components/Testimonials";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import Hero from "@/components/hero/Hero";
+import ServicesMatrix from "@/components/services/ServicesMatrix";
+import VoicebotSimulator from "@/components/simulator/VoicebotSimulator";
+import PortfolioShowcase from "@/components/portfolio/PortfolioShowcase";
+import GoDigitalEstimator from "@/components/estimator/GoDigitalEstimator";
+import SeoTransformation from "@/components/seo/SeoTransformation";
+import Testimonials from "@/components/testimonials/Testimonials";
+import ContactSection from "@/components/contact/ContactSection";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
