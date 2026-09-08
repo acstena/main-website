@@ -9,7 +9,7 @@ export default function HeroVisual() {
       <div className="hero-visual-frame">
         <Image
           src="/images/hero_digital_matrix.jpg"
-          alt="AuraDigital 3D Engineering Matrix Core"
+          alt="acstena 3D Engineering Matrix Core"
           fill
           priority
           sizes="(max-width: 768px) 100vw, 600px"

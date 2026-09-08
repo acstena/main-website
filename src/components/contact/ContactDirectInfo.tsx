@@ -109,11 +109,11 @@ export default function ContactDirectInfo() {
         <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem", fontSize: "0.9rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", color: "var(--text-secondary)" }}>
             <Mail size={16} color="var(--accent-cyan)" />
-            <span>architect@auradigital.io</span>
+            <span>architect@acstena.com</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", color: "var(--text-secondary)" }}>
             <Phone size={16} color="var(--accent-emerald)" />
-            <span>+1 (800) 555-AURA (Direct or Voicebot Test)</span>
+            <span>+1 (800) 555-ACSTENA (Direct or Voicebot Test)</span>
           </div>
         </div>
       </div>

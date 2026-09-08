@@ -50,7 +50,7 @@ export default function ComparisonTable() {
             <tr>
               <th>Business Operational Factor</th>
               <th style={{ color: "#f87171" }}>Legacy SMB (Spreadsheets & Voicemail)</th>
-              <th style={{ color: "var(--accent-emerald)" }}>Engineered by AuraDigital</th>
+              <th style={{ color: "var(--accent-emerald)" }}>Engineered by acstena</th>
             </tr>
           </thead>
           <tbody>

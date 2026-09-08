@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "/images/hero_digital_matrix.jpg",
         width: 1200,
         height: 675,
-        alt: "AuraDigital AI, Web & Mobile Engineering Platform",
+        alt: "acstena AI, Web & Mobile Engineering Platform",
       },
     ],
   },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: ["/images/hero_digital_matrix.jpg"],
-    creator: "@auradigital_tech",
+    creator: "@acstena_tech",
   },
   robots: {
     index: true,

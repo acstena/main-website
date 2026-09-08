@@ -376,3 +376,26 @@
 .form-control-textarea:focus {
   border-color: var(--accent-cyan);
 }
+
+/* --- Responsive Layout Rules --- */
+@media (min-width: 900px) {
+  .desktop-nav {
+    display: flex !important;
+  }
+  .desktop-cta {
+    display: flex !important;
+  }
+  .mobile-menu-btn {
+    display: none !important;
+  }
+  .contact-layout-grid {
+    grid-template-columns: 1fr 1.2fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+  }
+}
+

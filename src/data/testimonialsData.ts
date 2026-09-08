@@ -13,7 +13,7 @@ export const testimonialsList: Testimonial[] = [
     role: "Chief Medical Officer",
     company: "Metro Health Dental Clinics",
     quote:
-      "Our 4 clinical locations were bleeding after-hours emergency bookings. AuraDigital built an autonomous AI voice receptionist integrated into our EHR. We went from 42% missed calls to zero, capturing 1,420 extra patient bookings every month.",
+      "Our 4 clinical locations were bleeding after-hours emergency bookings. acstena built an autonomous AI voice receptionist integrated into our EHR. We went from 42% missed calls to zero, capturing 1,420 extra patient bookings every month.",
     metric: "0% Missed Calls (was 42%)",
     tag: "AI Telephony & Voicebot",
   },
@@ -22,7 +22,7 @@ export const testimonialsList: Testimonial[] = [
     role: "VP of Freight Operations",
     company: "SwiftLane Logistics",
     quote:
-      "We were drowning in Google Sheets and lost rate cards. The custom Next.js CRM portal AuraDigital built transformed our brokerage. Quote turnarounds dropped from 45 minutes to 45 seconds, and pipeline velocity jumped over 300%.",
+      "We were drowning in Google Sheets and lost rate cards. The custom Next.js CRM portal acstena built transformed our brokerage. Quote turnarounds dropped from 45 minutes to 45 seconds, and pipeline velocity jumped over 300%.",
     metric: "45s Quote Dispatch (was 45m)",
     tag: "Custom Web CRM & Cloud MVP",
   },

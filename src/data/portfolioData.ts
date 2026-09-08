@@ -62,8 +62,8 @@ export const portfolioProjects: ProjectCaseStudy[] = [
     tags: ["React Native", "Expo", "Mapbox SDK", "SQLite", "Node.js", "WebSockets"]
   },
   {
-    id: "auramind-wellness",
-    title: "AuraMind Spatial Soundscape & Meditation App",
+    id: "pulsemind-wellness",
+    title: "PulseMind Spatial Soundscape & Meditation App",
     category: "Mobile App Development",
     clientIndustry: "Digital Health & Mindfulness",
     summary:

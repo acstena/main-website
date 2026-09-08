@@ -1,13 +1,13 @@
 export const siteConfig = {
-  name: "AuraDigital | Premier AI, Web & Mobile Engineering Studio",
-  shortName: "AuraDigital",
+  name: "acstena | Premier AI, Web & Mobile Engineering Studio",
+  shortName: "acstena",
   description:
     "Award-winning digital solutions engineering studio. We build custom conversational AI voicebots, enterprise CRM web applications, high-performance logistics & wellness mobile apps, Figma UI/UX, and Adobe Animate motion graphics for startups and growing businesses ready to Go Digital.",
-  url: "https://auradigital.io",
-  ogImage: "https://auradigital.io/images/hero_digital_matrix.jpg",
-  author: "AuraDigital Engineering",
-  email: "contact@auradigital.io",
-  phone: "+1 (800) 555-AURA",
+  url: "https://acstena.com",
+  ogImage: "https://acstena.com/images/hero_digital_matrix.jpg",
+  author: "acstena Studio",
+  email: "contact@acstena.com",
+  phone: "+1 (800) 555-ACSTENA",
   keywords: [
     // Core Commercial Keywords
     "custom AI voicebot development",
@@ -30,9 +30,9 @@ export const siteConfig = {
     "real-time fleet management software"
   ],
   links: {
-    github: "https://github.com/auradigital",
-    linkedin: "https://linkedin.com/company/auradigital",
-    twitter: "https://twitter.com/auradigital_tech",
+    github: "https://github.com/acstena",
+    linkedin: "https://linkedin.com/company/acstena",
+    twitter: "https://twitter.com/acstena_tech",
   },
 };
 
@@ -41,11 +41,11 @@ export const jsonLdSchema = {
   "@graph": [
     {
       "@type": "ProfessionalService",
-      "@id": "https://auradigital.io/#service",
-      "name": "AuraDigital Solutions Studio",
-      "url": "https://auradigital.io",
-      "logo": "https://auradigital.io/images/hero_digital_matrix.jpg",
-      "image": "https://auradigital.io/images/hero_digital_matrix.jpg",
+      "@id": "https://acstena.com/#service",
+      "name": "acstena Digital Studio",
+      "url": "https://acstena.com",
+      "logo": "https://acstena.com/images/hero_digital_matrix.jpg",
+      "image": "https://acstena.com/images/hero_digital_matrix.jpg",
       "description": siteConfig.description,
       "priceRange": "$$$",
       "telephone": siteConfig.phone,
@@ -104,7 +104,7 @@ export const jsonLdSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://auradigital.io/#faq",
+      "@id": "https://acstena.com/#faq",
       "mainEntity": [
         {
           "@type": "Question",

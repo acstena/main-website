@@ -133,20 +133,6 @@ export default function Navbar() {
         navLinks={navLinks}
         onClose={() => setMobileMenuOpen(false)}
       />
-
-      <style jsx>{`
-        @media (min-width: 900px) {
-          .desktop-nav {
-            display: flex !important;
-          }
-          .desktop-cta {
-            display: flex !important;
-          }
-          .mobile-menu-btn {
-            display: none !important;
-          }
-        }
-      `}</style>
     </header>
   );
 }

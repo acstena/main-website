@@ -45,8 +45,8 @@ export default function Footer() {
               >
                 <Cpu size={18} color="#05070c" strokeWidth={2.5} />
               </div>
-              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.2rem", letterSpacing: "-0.02em" }}>
-                AURA<span style={{ color: "var(--accent-cyan)" }}>DIGITAL</span>
+              <div style={{ fontFamily: "var(--font-heading)", fontWeight: 800, fontSize: "1.35rem", letterSpacing: "-0.03em" }}>
+                acstena<span style={{ color: "var(--accent-cyan)" }}>.</span>
               </div>
             </div>
 

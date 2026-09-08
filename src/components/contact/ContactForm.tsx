@@ -268,14 +268,6 @@ export default function ContactForm() {
           )}
         </button>
       </form>
-
-      <style jsx>{`
-        @media (max-width: 600px) {
-          .form-row-2 {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }
