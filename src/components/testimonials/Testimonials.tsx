@@ -11,7 +11,7 @@ export default function Testimonials() {
       style={{
         position: "relative",
         background:
-          "linear-gradient(180deg, rgba(5,7,12,0) 0%, rgba(10,14,26,0.6) 50%, rgba(5,7,12,0) 100%)",
+          "linear-gradient(180deg, rgba(248,250,252,0) 0%, rgba(241,245,249,0.7) 50%, rgba(248,250,252,0) 100%)",
       }}
     >
       <div className="container">

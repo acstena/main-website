@@ -22,8 +22,8 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
         gridTemplateColumns: "1fr",
         gap: "2.5rem",
         alignItems: "center",
-        border: "1px solid rgba(0, 240, 255, 0.25)",
-        boxShadow: "0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 240, 255, 0.1)",
+        border: "1px solid rgba(0, 240, 255, 0.2)",
+        boxShadow: "0 20px 45px rgba(15, 23, 42, 0.08), 0 0 25px rgba(0, 240, 255, 0.06)",
       }}
     >
       {/* Left Column: Details */}

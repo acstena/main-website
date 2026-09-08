@@ -96,6 +96,8 @@ export default function YieldDashboard({
             Target Operational Transformation
           </div>
           <div
+            key={solution.id}
+            className="metric-pop-enter"
             style={{
               fontFamily: "var(--font-heading)",
               fontSize: "clamp(1.6rem, 3.2vw, 2.2rem)",

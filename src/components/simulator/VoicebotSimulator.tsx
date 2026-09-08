@@ -57,7 +57,7 @@ export default function VoicebotSimulator() {
       style={{
         position: "relative",
         background:
-          "linear-gradient(180deg, rgba(5,7,12,0) 0%, rgba(10,14,24,0.5) 50%, rgba(5,7,12,0) 100%)",
+          "linear-gradient(180deg, rgba(248,250,252,0) 0%, rgba(241,245,249,0.85) 50%, rgba(248,250,252,0) 100%)",
       }}
     >
       <div className="container">
@@ -88,7 +88,7 @@ export default function VoicebotSimulator() {
         />
 
         {/* Simulator Cockpit */}
-        <div className="glass-card simulator-cockpit">
+        <div className="simulator-cockpit">
           {/* Top Bar */}
           <div className="simulator-topbar">
             <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
@@ -102,10 +102,10 @@ export default function VoicebotSimulator() {
                 }}
               />
               <div>
-                <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "var(--text-primary)" }}>
+                <div style={{ fontSize: "0.95rem", fontWeight: 700, color: "#f8fafc" }}>
                   {selectedScenario.title}
                 </div>
-                <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
+                <div style={{ fontSize: "0.75rem", color: "#94a3b8" }}>
                   Target: {selectedScenario.industry}
                 </div>
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export type LogoOption = "nexus" | "orbit" | "prism" | "minimal";
 
@@ -12,11 +12,30 @@ interface LogoProps {
 }
 
 export default function Logo({
-  variant = "nexus",
+  variant: propVariant,
   size = 36,
   showText = true,
   className = "",
 }: LogoProps) {
+  const [activeVariant, setActiveVariant] = useState<LogoOption>(propVariant || "nexus");
+
+  useEffect(() => {
+    if (propVariant) {
+      setActiveVariant(propVariant);
+      return;
+    }
+    const handleLogoChange = (e: Event) => {
+      const customEvent = e as CustomEvent<LogoOption>;
+      if (customEvent.detail) {
+        setActiveVariant(customEvent.detail);
+      }
+    };
+    window.addEventListener("acstena:logoChange", handleLogoChange);
+    return () => window.removeEventListener("acstena:logoChange", handleLogoChange);
+  }, [propVariant]);
+
+  const variant = propVariant || activeVariant;
+
   // SVG Icon definitions for the 4 logo options
   const renderIcon = () => {
     switch (variant) {

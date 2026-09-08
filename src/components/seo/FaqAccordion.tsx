@@ -60,12 +60,13 @@ export default function FaqAccordion() {
 
               {isOpen && (
                 <div
+                  className="faq-content-enter"
                   style={{
                     padding: "0 1.5rem 1.5rem",
                     fontSize: "0.92rem",
                     color: "var(--text-secondary)",
                     lineHeight: 1.7,
-                    borderTop: "1px solid rgba(255, 255, 255, 0.05)",
+                    borderTop: "1px solid var(--border-subtle)",
                     paddingTop: "1rem",
                   }}
                 >

@@ -101,7 +101,7 @@ export default function TelemetryPane({
               <div
                 style={{
                   fontSize: "0.85rem",
-                  color: "var(--text-primary)",
+                  color: "#f8fafc",
                   fontWeight: 600,
                   marginTop: "0.15rem",
                 }}
@@ -128,7 +128,13 @@ export default function TelemetryPane({
             <button
               onClick={onStartSimulation}
               className="btn-primary"
-              style={{ padding: "0.6rem 1.4rem", fontSize: "0.88rem" }}
+              style={{
+                padding: "0.6rem 1.4rem",
+                fontSize: "0.88rem",
+                background: "linear-gradient(135deg, #10b981 0%, #06b6d4 100%)",
+                border: "none",
+                boxShadow: "0 0 20px rgba(16, 185, 129, 0.35)",
+              }}
             >
               <PhoneCall size={16} />
               <span>{currentStepIndex > 0 ? "Replay Simulation" : "Simulate Live Call"}</span>
@@ -159,17 +165,32 @@ export default function TelemetryPane({
           </button>
         </div>
 
+        {/* Dynamic Voice AI Audio Waveform Visualizer */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "0.5rem",
-            fontSize: "0.8rem",
-            color: "var(--text-muted)",
+            gap: "0.75rem",
+            padding: "0.4rem 0.85rem",
+            borderRadius: "9999px",
+            background: "rgba(255, 255, 255, 0.04)",
+            border: "1px solid rgba(255, 255, 255, 0.1)",
           }}
         >
-          <Volume2 size={16} color="var(--accent-cyan)" />
-          <span>Neural Audio Synthesizer Active</span>
+          <div className="equalizer-container">
+            {[...Array(10)].map((_, i) => (
+              <div
+                key={i}
+                className={`equalizer-bar ${isPlaying ? "active" : ""}`}
+                style={{
+                  height: isPlaying ? undefined : "5px",
+                }}
+              />
+            ))}
+          </div>
+          <span style={{ fontSize: "0.78rem", color: isPlaying ? "var(--accent-emerald)" : "#94a3b8", fontWeight: 600 }}>
+            {isPlaying ? "AI Voice Active (280ms)" : "Voice Engine Idle"}
+          </span>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Bot, User } from "lucide-react";
 import { DialogStep } from "@/types";
 
@@ -12,6 +12,11 @@ export default function ConversationPane({
   currentStepIndex,
 }: ConversationPaneProps) {
   const visibleSteps = dialog.slice(0, currentStepIndex + 1);
+  const bottomRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [currentStepIndex]);
 
   return (
     <div className="conversation-scroll-pane">
@@ -20,6 +25,7 @@ export default function ConversationPane({
         return (
           <div
             key={idx}
+            className="speech-bubble-enter"
             style={{
               display: "flex",
               alignItems: "flex-start",
@@ -53,19 +59,19 @@ export default function ConversationPane({
 
             <div
               style={{
-                maxWidth: "75%",
+                maxWidth: "78%",
                 padding: "1rem 1.25rem",
                 borderRadius: isAgent
                   ? "4px 16px 16px 16px"
                   : "16px 4px 16px 16px",
                 background: isAgent
-                  ? "rgba(18, 26, 45, 0.9)"
-                  : "rgba(35, 25, 60, 0.9)",
+                  ? "rgba(18, 26, 45, 0.95)"
+                  : "rgba(35, 25, 60, 0.95)",
                 border: isAgent
-                  ? "1px solid rgba(0, 240, 255, 0.25)"
-                  : "1px solid rgba(139, 92, 246, 0.25)",
+                  ? "1px solid rgba(0, 240, 255, 0.3)"
+                  : "1px solid rgba(139, 92, 246, 0.3)",
                 fontSize: "0.92rem",
-                color: "var(--text-primary)",
+                color: "#f8fafc",
                 lineHeight: 1.6,
               }}
             >
@@ -86,6 +92,7 @@ export default function ConversationPane({
           </div>
         );
       })}
+      <div ref={bottomRef} style={{ height: "1px" }} />
     </div>
   );
 }

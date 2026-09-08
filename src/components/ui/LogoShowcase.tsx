@@ -45,6 +45,13 @@ const logoVariants: LogoVariantInfo[] = [
 export default function LogoShowcase() {
   const [selectedLogo, setSelectedLogo] = useState<LogoOption>("nexus");
 
+  const handleSelectLogo = (id: LogoOption) => {
+    setSelectedLogo(id);
+    if (typeof window !== "undefined") {
+      window.dispatchEvent(new CustomEvent("acstena:logoChange", { detail: id }));
+    }
+  };
+
   return (
     <div
       className="glass-card"
@@ -124,7 +131,7 @@ export default function LogoShowcase() {
           return (
             <div
               key={variant.id}
-              onClick={() => setSelectedLogo(variant.id)}
+              onClick={() => handleSelectLogo(variant.id)}
               style={{
                 padding: "1.25rem",
                 borderRadius: "var(--radius-md)",
