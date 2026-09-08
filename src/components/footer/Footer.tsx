@@ -127,13 +127,13 @@ export default function Footer() {
             &copy; {currentYear} acstena Studio. All rights reserved. Precision-engineered with Next.js & GSAP.
           </div>
           <div style={{ display: "flex", gap: "1.5rem" }}>
-            <Link href="#services" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
               Privacy & IP Security
             </Link>
-            <Link href="#contact" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/contact" style={{ color: "inherit", textDecoration: "none" }}>
               Terms of Engineering
             </Link>
-            <Link href="#estimator" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/planner" style={{ color: "inherit", textDecoration: "none" }}>
               Service Level Agreement (SLA)
             </Link>
           </div>

@@ -28,7 +28,7 @@ export default function MobileDrawer({ isOpen, navLinks, onClose }: MobileDrawer
         </Link>
       ))}
       <Link
-        href="#contact"
+        href="/contact"
         onClick={onClose}
         className="btn-primary"
         style={{ width: "100%", textAlign: "center", marginTop: "0.5rem" }}

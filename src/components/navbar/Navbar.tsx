@@ -2,22 +2,23 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import MobileDrawer from "./MobileDrawer";
 import Logo from "@/components/ui/Logo";
 
 const navLinks = [
-  { label: "AI Solutions", href: "#voice-ai" },
-  { label: "Web & CRM", href: "#web-crm" },
-  { label: "Mobile Apps", href: "#mobile-apps" },
-  { label: "Design & Motion", href: "#design-motion" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "Sprint Planner", href: "#estimator" },
+  { label: "Services", href: "/services" },
+  { label: "AI Voicebots", href: "/voice-ai" },
+  { label: "Case Studies", href: "/portfolio" },
+  { label: "Sprint Planner", href: "/planner" },
+  { label: "SEO & Growth", href: "/seo-growth" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,11 +41,18 @@ export default function Navbar() {
           style={{ display: "none", alignItems: "center", gap: "1.75rem" }}
           className="desktop-nav"
         >
-          {navLinks.map((link) => (
-            <Link key={link.label} href={link.href} className="nav-link">
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`nav-link ${isActive ? "active" : ""}`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right CTA and Availability Status */}
@@ -71,7 +79,7 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="#contact"
+            href="/contact"
             className="btn-primary"
             style={{
               padding: "0.55rem 1.25rem",

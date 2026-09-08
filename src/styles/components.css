@@ -56,6 +56,11 @@
   color: var(--accent-primary);
 }
 
+.nav-link.active {
+  color: #4f46e5;
+  font-weight: 700;
+}
+
 .mobile-drawer {
   position: absolute;
   top: 100%;
@@ -77,7 +82,7 @@
 /* --- Hero Section --- */
 .hero-section {
   position: relative;
-  padding-top: 9rem;
+  padding-top: 8.5rem;
   padding-bottom: 5rem;
   overflow: hidden;
 }
@@ -91,28 +96,68 @@
 
 @media (min-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3.25rem;
   }
 }
 
 .hero-content {
-  max-width: 680px;
+  max-width: 660px;
+}
+
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 10px rgba(16, 185, 129, 0.08);
 }
 
 .hero-title {
-  font-size: clamp(2.3rem, 5vw, 3.8rem);
-  line-height: 1.12;
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.3rem, 4.4vw, 3.5rem);
+  line-height: 1.14;
+  margin-bottom: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.035em;
   color: var(--text-primary);
 }
 
 .hero-lead {
-  font-size: clamp(1.05rem, 1.8vw, 1.22rem);
+  font-size: clamp(0.98rem, 1.4vw, 1.1rem);
   color: var(--text-secondary);
   line-height: 1.7;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Value Highlights List */
+.hero-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+
+.hero-highlight-bullet {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.bullet-icon-box {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .hero-cta-group {
@@ -120,45 +165,289 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.25rem;
+}
+
+.hero-btn-main {
+  background: var(--obsidian-dark);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.25), 0 0 15px rgba(2, 132, 199, 0.2);
+  border: 1px solid rgba(2, 132, 199, 0.35);
+}
+
+.hero-btn-main:hover {
+  background: #0f172a;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.35), 0 0 25px rgba(2, 132, 199, 0.3);
+  transform: translateY(-2px);
 }
 
 .hero-metrics-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-subtle);
 }
 
+@media (min-width: 640px) {
+  .hero-metrics-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.hero-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .metric-val {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   font-weight: 800;
+  line-height: 1.1;
 }
 
 .metric-label {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.25rem;
+}
+
+.metric-sublabel {
+  font-size: 0.72rem;
   color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 0.1rem;
+}
+
+/* --- Hero Visual: Interactive Command Cockpit --- */
+.hero-visual-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-cockpit-stage {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: #090d16;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 
+    0 25px 60px -15px rgba(15, 23, 42, 0.35),
+    0 0 35px rgba(99, 102, 241, 0.15),
+    0 0 0 1px rgba(2, 132, 199, 0.15);
+  transition: all 0.3s ease;
+}
+
+.cockpit-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.85);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cockpit-tabs-row {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background: rgba(10, 14, 26, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  overflow-x: auto;
+}
+
+.cockpit-tab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.cockpit-tab-pill:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.cockpit-tab-pill.active {
+  background: rgba(2, 132, 199, 0.18);
+  border-color: rgba(2, 132, 199, 0.4);
+  color: #38bdf8;
+  box-shadow: 0 0 15px rgba(2, 132, 199, 0.15);
+}
+
+.cockpit-display-area {
+  position: relative;
+  min-height: 290px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cockpit-bg-image-wrapper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cockpit-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(9, 13, 22, 0.7) 0%, rgba(9, 13, 22, 0.95) 100%);
+}
+
+.cockpit-mode-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cockpit-call-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.cockpit-phone-pulse {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(16, 185, 129, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cockpit-dialogue-bubble {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(2, 132, 199, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cockpit-chips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 500px) {
+  .cockpit-chips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cockpit-hud-chip {
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.chip-label {
+  font-size: 0.68rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: monospace;
+}
+
+.chip-val {
+  font-size: 0.82rem;
+  font-weight: 700;
   margin-top: 0.15rem;
 }
 
-.hero-visual-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Mini Kanban Styles */
+.cockpit-kanban-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
 }
 
-.hero-visual-frame {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  border: 1px solid rgba(15, 23, 42, 0.12);
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.15), 0 0 35px rgba(99, 102, 241, 0.1);
+.kanban-mini-col {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.kanban-col-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.kanban-mini-card {
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.kanban-mini-card.active-card {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.kanban-mini-card .card-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.kanban-mini-card .card-sub {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.1rem;
+}
+
+.cockpit-bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 14, 26, 0.95);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cockpit-tech-pill {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  font-family: monospace;
 }
 
 /* --- Services & Capabilities Matrix --- */

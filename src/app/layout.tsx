@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { siteConfig, jsonLdSchema } from "@/data/seoKeywords";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -90,7 +92,9 @@ export default function RootLayout({
           <div className="ambient-glow-2" />
           <div className="ambient-glow-3" />
         </div>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
