@@ -5,34 +5,56 @@ export default function KeywordIndex() {
   return (
     <div
       style={{
-        padding: "1.5rem",
-        borderRadius: "var(--radius-md)",
-        background: "rgba(255, 255, 255, 0.02)",
-        border: "1px solid var(--border-subtle)",
+        padding: "1.75rem",
+        borderRadius: "16px",
+        background: "rgba(255, 255, 255, 0.03)",
+        border: "1px solid rgba(255, 255, 255, 0.08)",
         marginBottom: "2.5rem",
       }}
     >
       <div
         style={{
-          fontSize: "0.75rem",
-          fontWeight: 700,
-          textTransform: "uppercase",
-          letterSpacing: "0.06em",
-          color: "var(--text-muted)",
-          marginBottom: "0.75rem",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "0.5rem",
+          marginBottom: "1rem",
         }}
       >
-        Target Commercial Keywords & Index
+        <div
+          style={{
+            fontSize: "0.8rem",
+            fontWeight: 700,
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            color: "#f8fafc",
+            display: "flex",
+            alignItems: "center",
+            gap: "0.5rem",
+          }}
+        >
+          <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#38bdf8" }} />
+          Digital Capabilities & Service Index
+        </div>
+        <div style={{ fontSize: "0.75rem", color: "#64748b" }}>
+          Explore our complete range of digital solutions
+        </div>
       </div>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", fontSize: "0.75rem", color: "var(--text-muted)" }}>
+
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
         {siteConfig.keywords.map((k) => (
           <span
             key={k}
             style={{
-              padding: "0.2rem 0.6rem",
-              borderRadius: "4px",
-              background: "rgba(255, 255, 255, 0.03)",
-              border: "1px solid rgba(255, 255, 255, 0.05)",
+              padding: "0.3rem 0.75rem",
+              borderRadius: "9999px",
+              background: "rgba(255, 255, 255, 0.04)",
+              border: "1px solid rgba(255, 255, 255, 0.09)",
+              fontSize: "0.75rem",
+              color: "#94a3b8",
+              fontWeight: 500,
+              transition: "all 0.2s ease",
             }}
           >
             {k}

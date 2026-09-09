@@ -36,7 +36,7 @@ export default function GoDigitalEstimator() {
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "820px", margin: "0 auto 3.5rem" }}>
           <Badge variant="emerald" icon={<Cpu size={14} />} style={{ marginBottom: "1rem" }}>
-            Interactive Architecture & Sprint Planner
+            Interactive Project Planner
           </Badge>
           <h2
             style={{
@@ -47,11 +47,11 @@ export default function GoDigitalEstimator() {
           >
             Ready To Go Digital?{" "}
             <span className="gradient-text-emerald">
-              Plan Your Solution Architecture & Sprints
+              Plan Your Solution & Estimated Timeline
             </span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-            Select your digital transformation target below to view the recommended engineering stack, deployment sprint timeline, and operational efficiency gains tailored to your business scale.
+            Select what you want to build below to see recommended features, estimated launch timelines, and the real-world efficiency gains you can expect for your business.
           </p>
         </div>
 

@@ -6,9 +6,9 @@ import Badge from "@/components/ui/Badge";
 import VoicebotSimulator from "@/components/simulator/VoicebotSimulator";
 
 export const metadata: Metadata = {
-  title: "Autonomous AI Voicebots & Telephony Engineering",
+  title: "24/7 AI Phone Receptionist & Automated Scheduling",
   description:
-    "Production-grade conversational AI voicebots built on WebRTC, Twilio SIP, and OpenAI Realtime. Zero-latency telephone reception, 100% call answering, and live CRM sync.",
+    "Never miss a customer call. AI phone receptionists that answer instantly, speak in a natural human voice, schedule appointments, and connect seamlessly to your existing phone line.",
   alternates: {
     canonical: "https://acstena.com/voice-ai",
   },
@@ -17,18 +17,18 @@ export const metadata: Metadata = {
 const telephonySpecs = [
   {
     icon: <Zap size={20} color="var(--accent-cyan)" />,
-    title: "Sub-800ms Turn Latency",
-    desc: "Optimized WebSockets streaming delivers natural human-paced conversational flow without awkward pauses.",
+    title: "Instant Natural Responses (< 1s)",
+    desc: "Speaks naturally with human pacing and rhythm, eliminating the awkward delays and robotic tone common with old phone trees.",
   },
   {
     icon: <PhoneCall size={20} color="var(--accent-emerald)" />,
-    title: "100% Call Concurrency",
-    desc: "Simultaneously handle 1 or 500 concurrent callers with zero busy tones, dropped calls, or staff fatigue.",
+    title: "Answers Unlimited Calls Simultaneously",
+    desc: "Whether 1 customer calls or 50 call at the exact same moment, every caller is answered immediately. Zero busy tones, zero hold time.",
   },
   {
     icon: <ShieldCheck size={20} color="var(--accent-violet)" />,
-    title: "Live Database Sync",
-    desc: "Direct bi-directional integration with HubSpot, Salesforce, Postgres, or custom APIs to record caller data in real time.",
+    title: "Auto-Books Into Your Calendar",
+    desc: "Captures caller names, phone numbers, and requested dates, automatically scheduling appointments and texting confirmation receipts.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function VoiceAiPage() {
         {/* Page Header */}
         <div style={{ textAlign: "center", maxWidth: "860px", margin: "0 auto 3.5rem" }}>
           <Badge icon={<Mic size={14} />} style={{ marginBottom: "1rem" }}>
-            Conversational Telephony Specialization
+            24/7 Phone Receptionist
           </Badge>
           <h1
             style={{
@@ -48,9 +48,9 @@ export default function VoiceAiPage() {
               lineHeight: 1.15,
             }}
           >
-            Autonomous AI Voice Receptionists:{" "}
+            24/7 AI Phone Receptionists:{" "}
             <span className="gradient-text-cyan-violet">
-              Zero Missed Calls, 24/7/365
+              Never Miss A Customer Call Again
             </span>
           </h1>
           <p
@@ -60,7 +60,7 @@ export default function VoiceAiPage() {
               lineHeight: 1.7,
             }}
           >
-            Never lose another customer to an unanswered phone line. Our voice agents answer in under 2 seconds, verify customer intent, schedule appointments, and dispatch live SMS confirmations automatically.
+            Never lose another customer or job opportunity to voicemail. Our AI voice assistants answer in under 2 seconds, answer common questions, book appointments into your schedule, and send instant confirmation texts.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function VoiceAiPage() {
         {/* Live Interactive Voicebot Telephony Simulator */}
         <VoicebotSimulator />
 
-        {/* Architecture & Telephony Integration Overview */}
+        {/* Phone Integration Overview */}
         <div
           className="obsidian-card"
           style={{
@@ -125,13 +125,13 @@ export default function VoiceAiPage() {
                   marginBottom: "0.75rem",
                 }}
               >
-                Production Infrastructure Architecture
+                Seamless Phone Setup
               </div>
               <h2 style={{ fontSize: "clamp(1.8rem, 3vw, 2.4rem)", color: "#ffffff", marginBottom: "1rem" }}>
-                Connects Directly To Your Existing Phone Numbers & PBX
+                Works Directly With Your Existing Business Phone Number
               </h2>
               <p style={{ color: "#94a3b8", fontSize: "1rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-                Whether you use Twilio, Vonage, RingCentral, or traditional SIP trunks, our voice engine drops into your existing telecom setup with zero downtime. Calls can transfer seamlessly to live human staff with full transcript handoff whenever needed.
+                Keep your current phone number. Our system connects cleanly to your existing phone line with zero downtime. Whenever a customer needs personal attention or has an emergency, calls transfer directly to your mobile phone with complete call notes.
               </p>
 
               <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -140,7 +140,7 @@ export default function VoiceAiPage() {
                   className="btn-primary"
                   style={{ background: "linear-gradient(135deg, #10b981 0%, #06b6d4 100%)", border: "none" }}
                 >
-                  <span>Deploy Voicebot For Your Business</span>
+                  <span>Set Up AI Receptionist For Your Business</span>
                   <ArrowRight size={16} />
                 </Link>
                 <Link
@@ -148,7 +148,7 @@ export default function VoiceAiPage() {
                   className="btn-secondary"
                   style={{ background: "rgba(255,255,255,0.06)", color: "#ffffff", borderColor: "rgba(255,255,255,0.15)" }}
                 >
-                  <span>Estimate Voicebot Sprint Timeline</span>
+                  <span>Explore Project Planner</span>
                 </Link>
               </div>
             </div>

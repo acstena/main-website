@@ -18,13 +18,13 @@ export default function YieldDashboard({
     <div
       className="glass-card"
       style={{
-        padding: "clamp(1.5rem, 2.5vw, 2.5rem)",
+        padding: "clamp(1.25rem, 3vw, 2.5rem)",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        background: "rgba(10, 15, 28, 0.9)",
+        background: "rgba(255, 255, 255, 0.95)",
         border: "1px solid rgba(16, 185, 129, 0.3)",
-        boxShadow: "0 15px 45px rgba(0, 0, 0, 0.7)",
+        boxShadow: "0 15px 45px rgba(15, 23, 42, 0.06)",
       }}
     >
       <div>
@@ -33,6 +33,8 @@ export default function YieldDashboard({
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "0.75rem",
             marginBottom: "1.5rem",
             paddingBottom: "1rem",
             borderBottom: "1px solid var(--border-subtle)",
@@ -45,16 +47,16 @@ export default function YieldDashboard({
                 fontWeight: 700,
                 textTransform: "uppercase",
                 letterSpacing: "0.05em",
-                color: "var(--accent-emerald)",
+                color: "#059669",
               }}
             >
-              Engineering Scope
+              Selected Solution
             </div>
             <div
               style={{
                 fontSize: "1.2rem",
                 fontWeight: 800,
-                color: "var(--text-primary)",
+                color: "#0f172a",
                 marginTop: "0.2rem",
               }}
             >
@@ -64,10 +66,10 @@ export default function YieldDashboard({
 
           <div style={{ textAlign: "right" }}>
             <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
-              Deployment Window
+              Estimated Launch Time
             </div>
-            <div style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--accent-cyan)" }}>
-              ~{effectiveWeeks} Sprints
+            <div style={{ fontSize: "1.3rem", fontWeight: 800, color: "#0284c7" }}>
+              ~{effectiveWeeks} Weeks
             </div>
           </div>
         </div>
@@ -75,35 +77,35 @@ export default function YieldDashboard({
         {/* Operational Transformation Metric (Zero Prices) */}
         <div
           style={{
-            padding: "1.5rem",
+            padding: "1.25rem",
             borderRadius: "var(--radius-md)",
             background:
-              "linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(0, 240, 255, 0.08) 100%)",
-            border: "1px solid rgba(16, 185, 129, 0.3)",
-            marginBottom: "1.75rem",
+              "linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(2, 132, 199, 0.06) 100%)",
+            border: "1px solid rgba(16, 185, 129, 0.25)",
+            marginBottom: "1.5rem",
             textAlign: "center",
           }}
         >
           <div
             style={{
-              fontSize: "0.82rem",
+              fontSize: "0.78rem",
               fontWeight: 700,
               textTransform: "uppercase",
               letterSpacing: "0.06em",
-              color: "var(--accent-emerald)",
+              color: "#059669",
             }}
           >
-            Target Operational Transformation
+            Expected Business Result
           </div>
           <div
             key={solution.id}
             className="metric-pop-enter"
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "clamp(1.6rem, 3.2vw, 2.2rem)",
+              fontSize: "clamp(1.5rem, 3.2vw, 2.2rem)",
               fontWeight: 800,
-              color: "#34d399",
-              margin: "0.5rem 0",
+              color: "#059669",
+              margin: "0.4rem 0",
             }}
           >
             {solution.efficiencyGain}
@@ -125,7 +127,7 @@ export default function YieldDashboard({
               marginBottom: "0.5rem",
             }}
           >
-            Tailored Tech Architecture
+            Included Capabilities &amp; Features
           </div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.4rem" }}>
             {solution.techRecommendation.map((t) => (
@@ -135,10 +137,10 @@ export default function YieldDashboard({
                   fontSize: "0.75rem",
                   padding: "0.25rem 0.6rem",
                   borderRadius: "6px",
-                  background: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid rgba(255, 255, 255, 0.1)",
-                  color: "var(--accent-cyan)",
-                  fontFamily: "monospace",
+                  background: "rgba(2, 132, 199, 0.06)",
+                  border: "1px solid rgba(2, 132, 199, 0.2)",
+                  color: "#0284c7",
+                  fontWeight: 600,
                 }}
               >
                 {t}
@@ -155,19 +157,19 @@ export default function YieldDashboard({
             gap: "0.75rem",
             padding: "0.85rem 1rem",
             borderRadius: "var(--radius-md)",
-            background: "rgba(0, 240, 255, 0.05)",
-            border: "1px solid rgba(0, 240, 255, 0.15)",
+            background: "rgba(2, 132, 199, 0.05)",
+            border: "1px solid rgba(2, 132, 199, 0.15)",
             marginBottom: "2rem",
           }}
         >
           <TrendingUp
             size={18}
-            color="var(--accent-cyan)"
+            color="#0284c7"
             style={{ flexShrink: 0, marginTop: "0.2rem" }}
           />
           <div style={{ fontSize: "0.82rem", color: "var(--text-secondary)" }}>
-            <strong style={{ color: "var(--text-primary)" }}>
-              SEO & Google Ranking Advantage:
+            <strong style={{ color: "#0f172a" }}>
+              Business Growth Advantage:
             </strong>{" "}
             {solution.searchAdvantage}
           </div>
@@ -175,17 +177,17 @@ export default function YieldDashboard({
       </div>
 
       <Link
-        href={`#contact?solution=${solution.id}&team=${teamIndex}`}
+        href={`/contact?solution=${solution.id}&team=${teamIndex}`}
         className="btn-primary"
         style={{
           width: "100%",
-          padding: "1rem",
-          fontSize: "1rem",
-          background: "linear-gradient(135deg, #10b981 0%, #00f0ff 100%)",
-          boxShadow: "0 0 30px rgba(16, 185, 129, 0.35)",
+          padding: "0.9rem",
+          fontSize: "0.95rem",
+          textAlign: "center",
+          justifyContent: "center",
         }}
       >
-        <span>Lock In This Sprint With Our Engineers</span>
+        <span>Discuss This Solution For Your Business</span>
         <ArrowRight size={18} />
       </Link>
     </div>

@@ -49,7 +49,7 @@ export default function TelemetryPane({
           }}
         >
           <CheckCircle2 size={16} />
-          <span>Real-Time Extracted CRM & Database Payload</span>
+          <span>Customer Information Automatically Captured & Scheduled</span>
         </div>
       </div>
 
@@ -75,7 +75,7 @@ export default function TelemetryPane({
               border: "1px dashed var(--border-subtle)",
             }}
           >
-            Click &ldquo;Simulate Live Call&rdquo; below to view real-time payload extraction...
+            Click &ldquo;Simulate Live Call&rdquo; below to watch how customer details are captured and confirmed...
           </div>
         ) : (
           Object.entries(accumulatedData).map(([key, value]) => (
@@ -189,7 +189,7 @@ export default function TelemetryPane({
             ))}
           </div>
           <span style={{ fontSize: "0.78rem", color: isPlaying ? "var(--accent-emerald)" : "#94a3b8", fontWeight: 600 }}>
-            {isPlaying ? "AI Voice Active (280ms)" : "Voice Engine Idle"}
+            {isPlaying ? "AI Assistant Answering (Live)" : "Voice Engine Ready"}
           </span>
         </div>
       </div>

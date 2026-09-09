@@ -28,7 +28,7 @@ export default function PortfolioPage() {
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "820px", margin: "0 auto 3.5rem" }}>
           <Badge icon={<Trophy size={14} />} style={{ marginBottom: "1rem" }}>
-            Proven Commercial Engineering
+            Real Client Results
           </Badge>
           <h1
             style={{
@@ -37,7 +37,7 @@ export default function PortfolioPage() {
               lineHeight: 1.15,
             }}
           >
-            Engineering In Action:{" "}
+            Case Studies In Action:{" "}
             <span className="gradient-text-cyan-violet">
               Measurable Business Impact
             </span>
@@ -49,7 +49,7 @@ export default function PortfolioPage() {
               lineHeight: 1.7,
             }}
           >
-            Explore how our bespoke software architectures replace fragmented spreadsheets, eliminate lost revenue, and accelerate digital transformation for startups and established enterprises.
+            See how our custom digital solutions replace slow manual spreadsheets, capture missed phone calls, and help businesses scale smoothly and profitably.
           </p>
         </div>
 
@@ -121,15 +121,15 @@ export default function PortfolioPage() {
               lineHeight: 1.7,
             }}
           >
-            Speak directly with our senior full-stack and AI systems architects to map your technical requirements and launch timeline.
+            Speak directly with our team to map out what you need, get a free project roadmap, and discuss your launch timeline.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn-primary">
-              <span>Book Technical Discovery</span>
+              <span>Book Free Strategy Call</span>
               <ArrowRight size={16} />
             </Link>
             <Link href="/planner" className="btn-secondary">
-              <span>Plan Solution Sprints</span>
+              <span>Explore Project Planner</span>
             </Link>
           </div>
         </div>

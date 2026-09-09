@@ -7,26 +7,26 @@ export const faqList: FAQItem[] = [
   {
     question: "Why should small and local businesses Go Digital today?",
     answer:
-      "When a business relies on manual paper logs or spreadsheets, up to 40% of inbound leads are missed after business hours. Going digital replaces these gaps with 24/7 AI voicebots, automates client onboarding through custom web portals, and unlocks dominant organic search rankings on Google so customers find you before competitors.",
+      "When a business relies on manual paper notes or spreadsheets, up to 40% of customer calls and inquiries are missed after business hours. Going digital replaces these lost opportunities with a 24/7 AI phone receptionist, an organized client web portal, and top rankings on Google so new customers find you before competitors.",
   },
   {
-    question: "How does your technical SEO architecture guarantee top Google rankings?",
+    question: "How do you help our business rank at the top of Google searches?",
     answer:
-      "Unlike generic website builders, our Next.js App Router applications are server-rendered with zero render-blocking bloat, achieving 98+ Google PageSpeed and sub-second Time to First Byte (TTFB). We inject rich Schema.org JSON-LD structured data (ProfessionalService, FAQPage, OfferCatalog) so search engine crawlers immediately index your services for high-intent commercial keywords and Voice Search queries.",
+      "Most ordinary websites are slow, clunky on smartphones, and confusing to search engines. We build clean, modern websites that load in under 1 second and format your business information (services, location, reviews, and FAQs) directly for Google's search algorithms. This helps Google display your business prominently when local customers search for your services.",
   },
   {
-    question: "How fast can an AI voicebot or custom CRM MVP be deployed?",
+    question: "How fast can an AI phone receptionist or custom web portal be deployed?",
     answer:
-      "Our rapid engineering sprints deliver fully functional, production-grade MVPs and custom CRM web apps within 2 to 4 weeks. AI voicebots with Twilio telephony and live CRM sync are deployed in as little as 10 business days.",
+      "We deliver working systems rapidly. Custom web portals and client management dashboards launch within 2 to 4 weeks. Automated AI phone receptionists can be connected to your existing business phone number in as little as 7 to 10 business days.",
   },
   {
-    question: "Can an AI voicebot completely replace our front-desk phone reception?",
+    question: "Can an AI phone receptionist handle all of our incoming calls?",
     answer:
-      "Our AI voicebots handle 100% of routine inquiries, schedule appointments directly into your calendar, verify insurance or customer details, and immediately escalate complex high-stakes calls to human personnel with a complete live transcript.",
+      "Yes. The AI receptionist answers every call without putting customers on hold, books appointments straight into your schedule, answers common questions, and sends you instant text summaries. If an urgent customer calls, it transfers the call straight to your personal mobile phone.",
   },
   {
-    question: "Do you provide end-to-end Figma UI/UX design and Canva brand collateral?",
+    question: "Do you also handle website design, logos, and marketing materials?",
     answer:
-      "Yes. Every build starts with high-fidelity Figma design systems using auto-layout tokens and interactive prototypes. We also provide reusable Canva brand kits, digital NFC business cards, and 60fps Adobe Animate motion graphics for your social media and presentations.",
+      "Yes. We design clean, modern, clickable website previews in Figma so you see exactly how your site looks before development starts. We also create professional logos, digital tap-to-share business cards, easy-to-edit Canva templates, and animated visuals for your brand.",
   },
 ];

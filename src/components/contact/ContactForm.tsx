@@ -74,7 +74,7 @@ export default function ContactForm() {
           <CheckCircle2 size={36} color="var(--accent-emerald)" />
         </div>
         <h3 style={{ fontSize: "1.75rem", fontWeight: 800, marginBottom: "0.75rem" }}>
-          Consultation Request Dispatched!
+          Message Received Successfully!
         </h3>
         <p
           style={{
@@ -85,10 +85,10 @@ export default function ContactForm() {
             margin: "0 auto 2rem",
           }}
         >
-          Thank you, {formData.name}. Our lead systems architect has received your project parameters and will send over a detailed technical roadmap to <strong>{formData.email}</strong> within 24 hours.
+          Thank you, {formData.name}. We have received your inquiry and will send you a personalized plan and schedule a discovery call with you at <strong>{formData.email}</strong> within 24 hours.
         </p>
         <button onClick={() => setSubmitted(false)} className="btn-secondary">
-          Submit Another Project Inquiry
+          Submit Another Inquiry
         </button>
       </div>
     );
@@ -106,7 +106,7 @@ export default function ContactForm() {
     >
       <form onSubmit={handleSubmit}>
         <div style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "1rem" }}>
-          Project Scope & Architecture Intake
+          Tell Us About Your Project
         </div>
 
         {/* Service Pills Selection */}
@@ -122,7 +122,7 @@ export default function ContactForm() {
               marginBottom: "0.6rem",
             }}
           >
-            Select Services Required
+            What Solutions Are You Interested In?
           </label>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem" }}>
             {availableServices.map((srv) => {
@@ -239,12 +239,12 @@ export default function ContactForm() {
         {/* Message */}
         <div style={{ marginBottom: "1.75rem" }}>
           <label style={{ display: "block", fontSize: "0.8rem", fontWeight: 600, color: "var(--text-muted)", marginBottom: "0.4rem" }}>
-            Project Details & Existing Operational Bottlenecks
+            How Can We Help Your Business?
           </label>
           <textarea
             rows={4}
             required
-            placeholder="Briefly describe what you're looking to build (e.g. We need an AI voicebot to handle after-hours patient intake, or a custom Next.js CRM to replace our Excel logs)..."
+            placeholder="Briefly describe your goals (e.g. We need an AI phone receptionist to answer after-hours calls, or a custom web dashboard to manage our client orders)..."
             className="form-control-textarea"
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -258,10 +258,10 @@ export default function ContactForm() {
           style={{ width: "100%", padding: "1rem", fontSize: "1rem" }}
         >
           {isSubmitting ? (
-            <span>Synthesizing Requirements...</span>
+            <span>Sending Your Message...</span>
           ) : (
             <>
-              <span>Submit Project Scoping Request</span>
+              <span>Send Inquiry & Book Free Call</span>
               <Send size={18} />
             </>
           )}

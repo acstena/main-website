@@ -11,30 +11,30 @@ interface Pillar {
 const pillars: Pillar[] = [
   {
     number: "1",
-    title: "99+ Core Web Vitals",
+    title: "Fast Loading Speed (< 1s)",
     description:
-      "Sub-second First Contentful Paint (FCP) and near-zero layout shift. Google prioritizes ultra-fast, lightweight Next.js architectures over sluggish traditional WordPress templates.",
+      "Loads in under 1 second on mobile phones. Google rewards fast websites with top rankings, and visitors stay instead of clicking to competitors.",
     icon: <Zap size={22} color="var(--accent-cyan)" />,
   },
   {
     number: "2",
-    title: "Commercial Intent Targeting",
+    title: "Target Ready-to-Buy Clients",
     description:
-      "Laser-focused keyword architectures matching transactional searches: 'hire voicebot developer', 'custom CRM builder for SMB', 'logistics fleet mobile app'.",
+      "We target specific high-value customer searches (like 'emergency appointment' or 'commercial logistics') so people looking to buy find you first.",
     icon: <Target size={22} color="var(--accent-emerald)" />,
   },
   {
     number: "3",
-    title: "Schema.org Microdata",
+    title: "Google-Optimized Business Profile",
     description:
-      "Complete semantic JSON-LD graph linking ProfessionalServices, OfferCatalogs, and FAQs. Guarantees Google Rich Answer cards and voice search answers.",
+      "We structure your business details so Google displays your star ratings, customer reviews, services, and FAQs directly inside search results.",
     icon: <Globe size={22} color="var(--accent-violet)" />,
   },
   {
     number: "4",
-    title: "24/7 AI Lead Capture",
+    title: "24/7 Lead & Call Capture",
     description:
-      "Ranking #1 on Google is worthless if visitors bounce or call an unanswered line. Our embedded AI voicebots and interactive intake funnels lock in leads immediately.",
+      "Ranking on Google is only valuable if calls are answered. Our automated AI receptionist answers questions and books appointments around the clock.",
     icon: <ShieldCheck size={22} color="var(--accent-amber)" />,
   },
 ];

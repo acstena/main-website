@@ -4,50 +4,40 @@ import Link from "next/link";
 export default function FooterLinks() {
   return (
     <>
-      {/* Col 2: Engineering Solutions */}
+      {/* Col 2: Solutions */}
       <div>
-        <div
-          style={{
-            fontFamily: "var(--font-heading)",
-            fontSize: "0.95rem",
-            fontWeight: 700,
-            color: "var(--text-primary)",
-            marginBottom: "1.2rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.05em",
-          }}
-        >
-          Engineering & AI
+        <div className="footer-nav-heading">
+          AI & Software Solutions
         </div>
-        <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-secondary)" }}>
+        <ul className="footer-nav-list">
           <li>
-            <Link href="/voice-ai" style={{ color: "inherit", textDecoration: "none" }}>
-              Conversational Voicebots (Twilio / WebRTC)
+            <Link href="/voice-ai" className="footer-nav-link">
+              24/7 AI Phone Receptionists
             </Link>
           </li>
           <li>
-            <Link href="/voice-ai" style={{ color: "inherit", textDecoration: "none" }}>
-              Enterprise RAG Chatbots & Vector Search
+            <Link href="/voice-ai" className="footer-nav-link">
+              Smart Website Chatbots
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Custom Web CRM & Cloud Portals
+            <Link href="/services" className="footer-nav-link">
+              Custom Web Portals & CRMs
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Rapid 3-Week Next.js MVPs
+            <Link href="/services" className="footer-nav-link">
+              Rapid 3-Week Web MVPs
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Logistics & Fleet Telematics Apps
+            <Link href="/services" className="footer-nav-link">
+              Field & Fleet Dispatch Apps
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Meditation, Audio & Wellness Apps
+            <Link href="/services" className="footer-nav-link">
+              Meditation & Wellness Mobile Apps
             </Link>
           </li>
         </ul>
@@ -55,43 +45,33 @@ export default function FooterLinks() {
 
       {/* Col 3: Design & Motion */}
       <div>
-        <div
-          style={{
-            fontFamily: "var(--font-heading)",
-            fontSize: "0.95rem",
-            fontWeight: 700,
-            color: "var(--text-primary)",
-            marginBottom: "1.2rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.05em",
-          }}
-        >
-          Design & Motion
+        <div className="footer-nav-heading accent-violet">
+          Design & Creative
         </div>
-        <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-secondary)" }}>
+        <ul className="footer-nav-list">
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Figma UI/UX Systems & Prototypes
+            <Link href="/services" className="footer-nav-link">
+              Figma Website Prototypes
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Adobe Animate 2D Vector Animations
+            <Link href="/services" className="footer-nav-link">
+              2D Custom Web Animations
             </Link>
           </li>
           <li>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
-              Canva Brand Kits & Presentation Decks
+            <Link href="/services" className="footer-nav-link">
+              Canva Brand Kits & Pitch Decks
             </Link>
           </li>
           <li>
-            <Link href="/portfolio" style={{ color: "inherit", textDecoration: "none" }}>
-              Interactive Case Studies & Outcomes
+            <Link href="/portfolio" className="footer-nav-link">
+              Client Case Studies & Results
             </Link>
           </li>
           <li>
-            <Link href="/contact" style={{ color: "inherit", textDecoration: "none" }}>
-              NFC Digital Business Cards & Collateral
+            <Link href="/contact" className="footer-nav-link">
+              Digital NFC Business Cards
             </Link>
           </li>
         </ul>
@@ -99,43 +79,38 @@ export default function FooterLinks() {
 
       {/* Col 4: Small Business 'Go Digital' & SEO */}
       <div>
-        <div
-          style={{
-            fontFamily: "var(--font-heading)",
-            fontSize: "0.95rem",
-            fontWeight: 700,
-            color: "var(--accent-emerald)",
-            marginBottom: "1.2rem",
-            textTransform: "uppercase",
-            letterSpacing: "0.05em",
-          }}
-        >
+        <div className="footer-nav-heading accent-emerald">
           Go Digital & SEO
         </div>
-        <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.7rem", fontSize: "0.88rem", color: "var(--text-secondary)" }}>
+        <ul className="footer-nav-list">
           <li>
-            <Link href="/seo-growth" style={{ color: "inherit", textDecoration: "none" }}>
-              Small Business Digital Transformation
+            <Link href="/seo-growth" className="footer-nav-link">
+              Small Business Digital Growth
             </Link>
           </li>
           <li>
-            <Link href="/seo-growth" style={{ color: "inherit", textDecoration: "none" }}>
-              Commercial Intent Keyword Clustering
+            <Link href="/seo-growth" className="footer-nav-link">
+              Top Google Search Rankings
             </Link>
           </li>
           <li>
-            <Link href="/seo-growth" style={{ color: "inherit", textDecoration: "none" }}>
-              Core Web Vitals & 99+ PageSpeed
+            <Link href="/seo-growth" className="footer-nav-link">
+              Fast Mobile Page Speed
             </Link>
           </li>
           <li>
-            <Link href="/seo-growth" style={{ color: "inherit", textDecoration: "none" }}>
-              Schema.org JSON-LD Structured Data
+            <Link href="/seo-growth" className="footer-nav-link">
+              Google Maps & Review Strategy
             </Link>
           </li>
           <li>
-            <Link href="/planner" style={{ color: "inherit", textDecoration: "none" }}>
-              Architecture & Sprint Planner
+            <Link href="/planner" className="footer-nav-link">
+              Interactive Project Planner
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="footer-nav-link">
+              Book A Free Discovery Call
             </Link>
           </li>
         </ul>

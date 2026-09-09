@@ -12,7 +12,7 @@ export default function SeoTransformation() {
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "850px", margin: "0 auto 3.5rem" }}>
           <Badge variant="emerald" icon={<TrendingUp size={14} />} style={{ marginBottom: "1rem" }}>
-            Search Dominance & Digital Transformation
+            Search Dominance & Digital Growth
           </Badge>
           <h2
             style={{
@@ -22,12 +22,12 @@ export default function SeoTransformation() {
             }}
           >
             How Small Businesses{" "}
-            <span className="gradient-text-emerald">Go Digital & Outrank Market Competitors</span>
+            <span className="gradient-text-emerald">Go Digital & Outrank Local Competitors</span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-            Organic search ranking is not magic—it is uncompromising engineering.
-            We eliminate render-blocking bloat, structure your data with deep Schema.org microdata,
-            and automate your business operations so you capture and convert traffic 24 hours a day.
+            Getting to the top of Google is straightforward when done right.
+            We build blazing-fast websites, format your business details directly for Google's search engine,
+            and set up automated assistants so you capture new customer calls 24 hours a day.
           </p>
         </div>
 

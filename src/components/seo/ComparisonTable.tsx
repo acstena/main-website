@@ -9,24 +9,24 @@ interface ComparisonRow {
 
 const rows: ComparisonRow[] = [
   {
-    factor: "Phone Lead Ingestion",
-    legacy: "Voicemail (42% abandoned after 5 PM)",
-    modern: "Sub-800ms AI Voicebot (100% answered 24/7)",
+    factor: "Phone Calls & Lead Inquiries",
+    legacy: "Voicemail (40%+ callers hang up after hours)",
+    modern: "24/7 AI Receptionist (100% answered & booked instantly)",
   },
   {
-    factor: "Operational Pipeline",
-    legacy: "Clunky Google Sheets / Excel silos",
-    modern: "Custom Next.js & Supabase CRM Kanban",
+    factor: "Customer & Order Management",
+    legacy: "Messy spreadsheets, lost emails, and sticky notes",
+    modern: "Unified Business Portal & Live Client Pipeline",
   },
   {
-    factor: "Google SERP Visibility",
-    legacy: "Page 4-10 (Slow WordPress, no microdata)",
-    modern: "Top 3 Rankings + Google Answer Rich Cards",
+    factor: "Google Search Visibility",
+    legacy: "Page 4+ (Slow template, invisible to local customers)",
+    modern: "Top Google Rankings with Star Ratings & FAQs",
   },
   {
-    factor: "Mobile Accessibility",
-    legacy: "Desktop web only or broken mobile layout",
-    modern: "Offline-first React Native / Mobile PWA",
+    factor: "Smartphone Experience",
+    legacy: "Slow loading or broken layout on phones",
+    modern: "Fast, sleek mobile experience that works anywhere",
   },
 ];
 
@@ -41,16 +41,16 @@ export default function ComparisonTable() {
       }}
     >
       <h3 style={{ fontSize: "1.4rem", marginBottom: "1.5rem", textAlign: "center" }}>
-        Comparison: The Legacy Way vs. The Modern Digital Standard
+        Comparison: Traditional Manual Methods vs. The Modern Digital Standard
       </h3>
 
       <div className="comparison-table-wrapper">
         <table className="comparison-table">
           <thead>
             <tr>
-              <th>Business Operational Factor</th>
-              <th style={{ color: "#f87171" }}>Legacy SMB (Spreadsheets & Voicemail)</th>
-              <th style={{ color: "var(--accent-emerald)" }}>Engineered by acstena</th>
+              <th>Business Area</th>
+              <th style={{ color: "#f87171" }}>Traditional Setup (Spreadsheets & Voicemail)</th>
+              <th style={{ color: "var(--accent-emerald)" }}>Modern System by acstena</th>
             </tr>
           </thead>
           <tbody>

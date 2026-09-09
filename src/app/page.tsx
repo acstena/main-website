@@ -20,39 +20,39 @@ import Testimonials from "@/components/testimonials/Testimonials";
 const corePillars = [
   {
     icon: <Bot size={24} color="var(--accent-cyan)" />,
-    title: "Conversational AI Voicebots",
-    tagline: "Sub-800ms automated phone reception & booking",
+    title: "24/7 AI Phone Receptionists",
+    tagline: "Answers calls instantly & books appointments",
     description:
-      "Replace lost phone leads with 24/7 AI agents that answer callers, verify details, book calendar slots, and sync directly with your CRM.",
+      "Never lose another customer to voicemail. Our AI answers inbound phone calls, handles common inquiries, and books appointments directly into your calendar 24/7.",
     href: "/voice-ai",
-    badge: "Voice AI & WebRTC",
+    badge: "24/7 Phone Reception",
   },
   {
     icon: <LayoutDashboard size={24} color="#38bdf8" />,
-    title: "Web CRM & Rapid Cloud MVPs",
-    tagline: "From manual spreadsheets to unified scalable portals",
+    title: "Custom Business Portals & CRMs",
+    tagline: "Replace messy spreadsheets with one simple cloud dashboard",
     description:
-      "Turn fragmented operational spreadsheets into secure, high-velocity Next.js web applications and client portals in 2 to 4 weeks.",
+      "Outgrow manual spreadsheets and lost rate cards. We build secure, easy-to-use web dashboards where your team and clients manage orders, quotes, and leads in seconds.",
     href: "/services",
-    badge: "Next.js 16 & Serverless",
+    badge: "Custom Web Software",
   },
   {
     icon: <Truck size={24} color="var(--accent-emerald)" />,
-    title: "Logistics & Wellness Mobile Apps",
-    tagline: "Offline-first telematics & audio soundscapes",
+    title: "Field & Customer Mobile Apps",
+    tagline: "Built for drivers, operations, and customer engagement",
     description:
-      "Cross-platform React Native and Flutter mobile applications built for real-time fleet GPS tracking or spatial audio wellness routines.",
+      "Smooth iOS and Android mobile applications built for real-time delivery GPS tracking that works even offline, or rich wellness, audio, and community apps.",
     href: "/services",
-    badge: "iOS & Android",
+    badge: "iOS & Android Apps",
   },
   {
     icon: <Sparkles size={24} color="var(--accent-amber)" />,
-    title: "Figma UI/UX & Adobe Animate Motion",
-    tagline: "Atomic design tokens & 60fps vector animation",
+    title: "Website Design & Motion Graphics",
+    tagline: "Modern designs that convert visitors into paying clients",
     description:
-      "Conversion-optimized Figma design systems, reusable Canva marketing collateral, and liquid-smooth Adobe Animate web motion graphics.",
+      "High-converting Figma website prototypes, reusable brand marketing kits on Canva, and liquid-smooth 2D custom motion animations made with Adobe Animate.",
     href: "/services",
-    badge: "Design Systems & 2D Motion",
+    badge: "Design & 2D Motion",
   },
 ];
 
@@ -62,12 +62,7 @@ export default function Home() {
       {/* 1. Hero Section */}
       <Hero />
 
-      {/* 2. Interactive Logo Showcase */}
-      <div className="container" style={{ position: "relative", zIndex: 10, marginBottom: "2rem" }}>
-        <LogoShowcase />
-      </div>
-
-      {/* 3. Core Solutions Highlights */}
+      {/* 2. Core Solutions Highlights */}
       <section className="section-spacing" style={{ position: "relative" }}>
         <div className="container">
           <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 3.5rem" }}>
@@ -81,11 +76,11 @@ export default function Home() {
             >
               Engineered To Scale:{" "}
               <span className="gradient-text-cyan-violet">
-                AI Voice, Full-Stack Web & Mobile
+                AI Voice, Web Portals & Mobile Apps
               </span>
             </h2>
             <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-              Every solution we deploy is built for measurable operational velocity: zero missed phone leads, rapid time-to-market, and dominant organic search rankings.
+              Every solution we deliver is built for measurable business growth: zero missed customer calls, fast turnaround, and clear results that save your team hours every single day.
             </p>
           </div>
 
@@ -170,7 +165,7 @@ export default function Home() {
                     textDecoration: "none",
                   }}
                 >
-                  <span>Learn more about this capability</span>
+                  <span>Learn more about this solution</span>
                   <ArrowRight size={15} />
                 </Link>
               </div>
@@ -184,14 +179,14 @@ export default function Home() {
               className="btn-primary"
               style={{ padding: "0.9rem 2.2rem", fontSize: "1rem" }}
             >
-              <span>Explore All 8 Digital Solutions & Deliverables</span>
+              <span>Explore All Digital Solutions & Services</span>
               <ArrowRight size={18} />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 4. Voice AI Spotlight Banner */}
+      {/* 3. Voice AI Spotlight Banner */}
       <section
         style={{
           padding: "5rem 0",
@@ -219,14 +214,14 @@ export default function Home() {
             >
               <div>
                 <Badge icon={<PhoneCall size={14} />} style={{ marginBottom: "1rem" }}>
-                  Featured Engineering Breakthrough
+                  Featured Business Breakthrough
                 </Badge>
                 <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.7rem)", color: "#ffffff", marginBottom: "1.2rem", lineHeight: 1.2 }}>
-                  Sub-800ms Autonomous Voice Receptionists:{" "}
+                  24/7 AI Phone Receptionists:{" "}
                   <span style={{ color: "#38bdf8" }}>Never Miss A Customer Call Again</span>
                 </h2>
                 <p style={{ color: "#94a3b8", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "2rem", maxWidth: "750px" }}>
-                  Our conversational AI voice agents answer concurrent inbound phone calls, schedule appointments directly into EHR/CRM systems, verify insurance or caller parameters, and escalate high-stakes inquiries to humans with live transcript handoff.
+                  Our conversational AI voice agents answer concurrent customer calls, schedule appointments directly into your business calendar, answer common questions, and send instant confirmation texts to your clients.
                 </p>
 
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
@@ -240,15 +235,15 @@ export default function Home() {
                       fontWeight: 700,
                     }}
                   >
-                    <span>Test Interactive Live Telephony Simulator</span>
+                    <span>Test Live Interactive Voicebot</span>
                     <ArrowRight size={18} />
                   </Link>
                   <Link
-                    href="/planner"
+                    href="/contact"
                     className="btn-secondary"
                     style={{ background: "rgba(255,255,255,0.06)", color: "#ffffff", borderColor: "rgba(255,255,255,0.15)" }}
                   >
-                    <span>Plan Voicebot Sprint</span>
+                    <span>Schedule Free Strategy Call</span>
                   </Link>
                 </div>
               </div>
@@ -297,9 +292,9 @@ export default function Home() {
               <div style={{ fontSize: "0.78rem", fontWeight: 700, color: "var(--accent-cyan)", textTransform: "uppercase", marginBottom: "0.5rem" }}>
                 Healthcare Clinic Network
               </div>
-              <h3 style={{ fontSize: "1.3rem", marginBottom: "0.75rem" }}>OmniVoice AI Telephony & Receptionist</h3>
+              <h3 style={{ fontSize: "1.3rem", marginBottom: "0.75rem" }}>OmniVoice 24/7 AI Receptionist & Booking</h3>
               <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.6, marginBottom: "1.5rem" }}>
-                Zero-latency conversational voice agent answering 200+ concurrent inbound patient calls with direct EHR appointment scheduling.
+                Natural-sounding AI phone receptionist that answers 200+ patient calls simultaneously and schedules appointments directly into the calendar with zero hold time.
               </p>
               <div style={{ display: "flex", gap: "1rem", borderTop: "1px solid var(--border-subtle)", paddingTop: "1rem" }}>
                 <div>
@@ -326,7 +321,7 @@ export default function Home() {
               </div>
               <h3 style={{ fontSize: "1.3rem", marginBottom: "0.75rem" }}>ApexFlow Enterprise CRM & Operational Hub</h3>
               <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 1.6, marginBottom: "1.5rem" }}>
-                Unified cloud dispatch portal replacing 14 fragmented Google Sheets with instant algorithmic quoting and automated DocuSign webhooks.
+                Unified cloud operations portal replacing 14 fragmented spreadsheets with instant automated quote generation and digital client signing.
               </p>
               <div style={{ display: "flex", gap: "1rem", borderTop: "1px solid var(--border-subtle)", paddingTop: "1rem" }}>
                 <div>
@@ -335,7 +330,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div style={{ fontSize: "1.3rem", fontWeight: 800, color: "var(--accent-emerald)" }}>+310%</div>
-                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>Pipeline Velocity</div>
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>Team Productivity</div>
                 </div>
               </div>
             </div>
@@ -343,8 +338,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Testimonials */}
+      {/* 5. Testimonials */}
       <Testimonials />
+
+      {/* 6. Interactive Brand Identity Options */}
+      <section style={{ padding: "3rem 0", position: "relative" }}>
+        <div className="container">
+          <LogoShowcase />
+        </div>
+      </section>
 
       {/* 7. Final High-Conversion Banner */}
       <section className="section-spacing" style={{ paddingTop: 0 }}>
@@ -360,10 +362,10 @@ export default function Home() {
             }}
           >
             <Badge icon={<Cpu size={14} />} style={{ marginBottom: "1rem" }}>
-              Accelerate Your Digital Transformation
+              Take Your Business Digital
             </Badge>
             <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", marginBottom: "1.25rem", lineHeight: 1.2 }}>
-              Ready To Retire Fragile Spreadsheets & Lost Phone Leads?
+              Ready To Stop Losing Phone Leads & Outgrow Messy Spreadsheets?
             </h2>
             <p
               style={{
@@ -374,15 +376,15 @@ export default function Home() {
                 lineHeight: 1.7,
               }}
             >
-              Plan your solution architecture, estimate sprint windows, or schedule a direct consultation with our lead full-stack and AI systems architects.
+              Tell us about your business goals. We&apos;ll design your custom digital solution, calculate delivery timelines, and help you launch in weeks.
             </p>
             <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
               <Link href="/contact" className="btn-primary" style={{ padding: "0.9rem 2rem", fontSize: "1rem" }}>
-                <span>Book Technical Discovery</span>
+                <span>Book Free Discovery Call</span>
                 <ArrowRight size={18} />
               </Link>
               <Link href="/planner" className="btn-secondary" style={{ padding: "0.9rem 2rem", fontSize: "1rem" }}>
-                <span>Launch Interactive Sprint Planner</span>
+                <span>Plan Your Solution Scope</span>
               </Link>
             </div>
           </div>

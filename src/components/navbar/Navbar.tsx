@@ -37,10 +37,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav
-          style={{ display: "none", alignItems: "center", gap: "1.75rem" }}
-          className="desktop-nav"
-        >
+        <nav className="desktop-nav">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -50,44 +47,21 @@ export default function Navbar() {
                 className={`nav-link ${isActive ? "active" : ""}`}
               >
                 {link.label}
+                {isActive && <span className="nav-link-indicator" />}
               </Link>
             );
           })}
         </nav>
 
         {/* Right CTA and Availability Status */}
-        <div
-          style={{ display: "none", alignItems: "center", gap: "1rem" }}
-          className="desktop-cta"
-        >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "0.5rem",
-              padding: "0.35rem 0.8rem",
-              borderRadius: "9999px",
-              background: "rgba(16, 185, 129, 0.08)",
-              border: "1px solid rgba(16, 185, 129, 0.25)",
-              fontSize: "0.75rem",
-              fontWeight: 500,
-              color: "#34d399",
-            }}
-          >
+        <div className="desktop-cta">
+          <div className="nav-availability-badge">
             <div className="pulse-dot" />
             <span>Available for Sprints</span>
           </div>
 
-          <Link
-            href="/contact"
-            className="btn-primary"
-            style={{
-              padding: "0.55rem 1.25rem",
-              fontSize: "0.85rem",
-              borderRadius: "9999px",
-            }}
-          >
-            <span>Go Digital</span>
+          <Link href="/contact" className="nav-cta-btn">
+            <span>Talk to Us</span>
             <ArrowUpRight size={16} />
           </Link>
         </div>
@@ -95,16 +69,6 @@ export default function Navbar() {
         {/* Mobile menu toggle */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            background: "none",
-            border: "none",
-            color: "var(--text-primary)",
-            cursor: "pointer",
-            padding: "0.5rem",
-          }}
           className="mobile-menu-btn"
           aria-label="Toggle navigation menu"
         >

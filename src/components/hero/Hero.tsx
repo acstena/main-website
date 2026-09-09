@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
-import { ArrowRight, Sparkles, Zap, CheckCircle2, ShieldCheck } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { initGSAP } from "@/lib/gsap";
 import HeroMetrics from "./HeroMetrics";
 import HeroVisual from "./HeroVisual";
@@ -26,21 +26,20 @@ export default function Hero() {
               headlineRef.current,
               textRef.current,
               ctaRef.current,
-              ".hero-cockpit-stage",
-              ".hero-metrics-row",
+              ".hero-metrics-grid",
+              ".hero-visual-wrapper",
             ],
             { clearProps: "all" }
           );
         },
       });
 
-      tl.from(".hero-pill", { opacity: 0, y: 20, duration: 0.5, delay: 0.1 })
-        .from(headlineRef.current, { opacity: 0, y: 25, duration: 0.7 }, "-=0.3")
-        .from(textRef.current, { opacity: 0, y: 20, duration: 0.6 }, "-=0.4")
-        .from(".hero-highlights-list", { opacity: 0, y: 15, duration: 0.5 }, "-=0.4")
-        .from(ctaRef.current, { opacity: 0, y: 20, duration: 0.6 }, "-=0.4")
-        .from(".hero-cockpit-stage", { opacity: 0, scale: 0.96, y: 30, duration: 0.8 }, "-=0.6")
-        .from(".hero-metrics-row", { opacity: 0, y: 20, duration: 0.6 }, "-=0.5");
+      tl.from(".hero-pill", { opacity: 0, y: 15, duration: 0.5, delay: 0.1 })
+        .from(headlineRef.current, { opacity: 0, y: 20, duration: 0.7 }, "-=0.3")
+        .from(textRef.current, { opacity: 0, y: 15, duration: 0.6 }, "-=0.4")
+        .from(ctaRef.current, { opacity: 0, y: 15, duration: 0.5 }, "-=0.4")
+        .from(".hero-metrics-grid", { opacity: 0, y: 20, duration: 0.6 }, "-=0.3")
+        .from(".hero-visual-wrapper", { opacity: 0, scale: 0.97, y: 25, duration: 0.8 }, "-=0.5");
     }, heroRef);
 
     return () => ctx.revert();
@@ -49,78 +48,66 @@ export default function Hero() {
   return (
     <section ref={heroRef} className="hero-section">
       <div className="container">
-        <div className="hero-grid">
-          {/* Value Proposition & CTAs */}
-          <div className="hero-content">
-            {/* Live Studio Availability Badge */}
-            <div className="hero-status-pill hero-pill">
-              <div className="pulse-dot" />
-              <span style={{ fontWeight: 700, color: "#059669" }}>Available for Q3/Q4 Sprints</span>
-              <span style={{ opacity: 0.25, margin: "0 0.25rem" }}>|</span>
-              <span style={{ color: "var(--text-secondary)", fontSize: "0.78rem" }}>
-                Senior AI & Full-Stack Pod
-              </span>
-            </div>
-
-            <h1 ref={headlineRef} className="hero-title">
-              Engineering Digital Products That Scale:{" "}
-              <span className="gradient-text-cyan-violet">
-                AI Voicebots, Custom Web CRMs & Mobile Apps
-              </span>
-            </h1>
-
-            <p ref={textRef} className="hero-lead">
-              We design and engineer mission-critical digital systems for forward-thinking businesses.
-              Replace lost phone leads with <strong>sub-800ms conversational AI voice receptionists</strong>,
-              transition manual spreadsheets into <strong>custom Next.js web applications</strong>, and deploy
-              <strong> offline-first mobile telematics</strong> with verified technical excellence.
-            </p>
-
-            {/* Value Highlights List */}
-            <div className="hero-highlights-list">
-              <div className="hero-highlight-bullet">
-                <div className="bullet-icon-box" style={{ background: "rgba(2, 132, 199, 0.1)" }}>
-                  <Zap size={14} color="var(--accent-cyan)" />
-                </div>
-                <span>
-                  <strong>Sub-800ms AI Telephony:</strong> 100% inbound calls answered & booked 24/7
-                </span>
-              </div>
-              <div className="hero-highlight-bullet">
-                <div className="bullet-icon-box" style={{ background: "rgba(16, 185, 129, 0.1)" }}>
-                  <CheckCircle2 size={14} color="var(--accent-emerald)" />
-                </div>
-                <span>
-                  <strong>Next.js Cloud CRMs:</strong> Rapid 3-week deployments with PostgreSQL & Supabase
-                </span>
-              </div>
-              <div className="hero-highlight-bullet">
-                <div className="bullet-icon-box" style={{ background: "rgba(99, 102, 241, 0.1)" }}>
-                  <ShieldCheck size={14} color="var(--accent-violet)" />
-                </div>
-                <span>
-                  <strong>Enterprise Mobile Apps:</strong> Real-time logistics telemetry & audio soundscapes
-                </span>
-              </div>
-            </div>
-
-            {/* CTAs */}
-            <div ref={ctaRef} className="hero-cta-group">
-              <Link href="/contact" className="btn-primary hero-btn-main">
-                <span>Start Your Digital Project</span>
-                <ArrowRight size={18} />
-              </Link>
-              <Link href="/planner" className="btn-secondary hero-btn-sub">
-                <span>Plan Sprints & Tech Stack</span>
-              </Link>
-            </div>
-
-            {/* 4 Performance Metrics */}
-            <HeroMetrics />
+        {/* Centered Grand Hero Content */}
+        <div className="hero-centered-content">
+          {/* Live Studio Availability Badge */}
+          <div className="hero-status-pill hero-pill">
+            <div className="pulse-dot" />
+            <span style={{ fontWeight: 700, color: "#059669" }}>Available for New Projects</span>
+            <span className="hero-pill-divider" style={{ opacity: 0.25, margin: "0 0.4rem" }}>|</span>
+            <span className="hero-pill-secondary" style={{ color: "var(--text-secondary)", fontSize: "0.8rem" }}>
+              High-Velocity Digital Delivery Partner
+            </span>
           </div>
 
-          {/* AI Visual Showcase: Interactive Command Cockpit */}
-          <HeroVisual />
+          {/* Centered High-Impact Headline */}
+          <h1 ref={headlineRef} className="hero-title">
+            We Build Custom Software &amp; AI Voicebots That{" "}
+            <span className="gradient-text-cyan-violet">
+              Scale Your Business
+            </span>
+          </h1>
+
+          {/* Clean 2-Line Subtitle */}
+          <p ref={textRef} className="hero-lead">
+            From 24/7 AI phone receptionists that capture every customer lead, to custom web portals
+            that replace messy spreadsheets. We build, launch, and support your digital systems in weeks.
+          </p>
+
+          {/* Centered Action CTAs */}
+          <div ref={ctaRef} className="hero-cta-group">
+            <Link href="/contact" className="btn-primary hero-btn-main">
+              <span>Book a Strategy Call</span>
+              <ArrowRight size={18} />
+            </Link>
+            <Link href="/voice-ai" className="btn-secondary hero-btn-sub">
+              <span>Try Live Voice Simulator</span>
+            </Link>
+          </div>
+
+          {/* 4 Performance Metric Cards in Centered Grid */}
+          <HeroMetrics />
+        </div>
+
+        {/* Flagship Interactive Solution Showcase (Centered, Fixed Height, Zero Shift) */}
+        <HeroVisual />
+
+        {/* Social Proof / Client Trust Bar (Developers Den Benchmark) */}
+        <div className="hero-trust-bar">
+          <p className="hero-trust-title">
+            Trusted by fast-growing medical practices, logistics operators &amp; forward-thinking businesses
+          </p>
+          <div className="hero-trust-logos">
+            <span className="trust-client-logo">OmniHealth Clinics</span>
+            <span className="trust-client-divider">•</span>
+            <span className="trust-client-logo">SwiftLane Freight</span>
+            <span className="trust-client-divider">•</span>
+            <span className="trust-client-logo">ApexFlow Systems</span>
+            <span className="trust-client-divider">•</span>
+            <span className="trust-client-logo">FleetPulse Mobile</span>
+            <span className="trust-client-divider">•</span>
+            <span className="trust-client-logo">Zenith Digital</span>
+          </div>
         </div>
       </div>
     </section>

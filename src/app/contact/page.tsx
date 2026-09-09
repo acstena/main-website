@@ -5,9 +5,9 @@ import Badge from "@/components/ui/Badge";
 import ContactSection from "@/components/contact/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Book A Technical Discovery Consultation",
+  title: "Contact Us & Book A Free Discovery Call",
   description:
-    "Schedule a direct consultation with acstena's senior AI and software architects. Get a comprehensive technical specification, architecture design, and milestone delivery plan within 24 hours.",
+    "Get in touch with the acstena team. Tell us about your project to receive a personalized proposal, working demonstration, and clear delivery timeline within 24 hours.",
   alternates: {
     canonical: "https://acstena.com/contact",
   },
@@ -20,7 +20,7 @@ export default function ContactPage() {
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto 3rem" }}>
           <Badge icon={<MessageSquare size={14} />} style={{ marginBottom: "1rem" }}>
-            Direct Senior Engineering Access
+            Free Project Consultation
           </Badge>
           <h1
             style={{
@@ -29,9 +29,9 @@ export default function ContactPage() {
               lineHeight: 1.15,
             }}
           >
-            Start Your Digital Project:{" "}
+            Let&apos;s Build Your Solution:{" "}
             <span className="gradient-text-cyan-violet">
-              Technical Discovery Consultation
+              Book A Free Discovery Call
             </span>
           </h1>
           <p
@@ -41,7 +41,7 @@ export default function ContactPage() {
               lineHeight: 1.7,
             }}
           >
-            No high-pressure sales pitches. You will speak directly with our lead full-stack and AI systems architects to scope your architecture, deliverables, and launch timeline.
+            No high-pressure sales pitches or confusing technical jargon. Speak directly with our builders to discuss your goals, explore features, and receive an exact timeline and plan.
           </p>
         </div>
 

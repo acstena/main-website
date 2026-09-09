@@ -9,6 +9,7 @@ interface LogoProps {
   size?: number;
   showText?: boolean;
   className?: string;
+  theme?: "light" | "dark";
 }
 
 export default function Logo({
@@ -16,6 +17,7 @@ export default function Logo({
   size = 36,
   showText = true,
   className = "",
+  theme = "light",
 }: LogoProps) {
   const [activeVariant, setActiveVariant] = useState<LogoOption>(propVariant || "nexus");
 
@@ -153,7 +155,7 @@ export default function Logo({
               fontSize: "1.25rem",
               letterSpacing: "-0.035em",
               lineHeight: 1.05,
-              color: "var(--text-primary)",
+              color: theme === "dark" ? "#ffffff" : "var(--text-primary)",
             }}
           >
             acstena<span style={{ color: "var(--accent-primary)" }}>.</span>
@@ -161,7 +163,7 @@ export default function Logo({
           <div
             style={{
               fontSize: "0.62rem",
-              color: "var(--text-muted)",
+              color: theme === "dark" ? "#94a3b8" : "var(--text-muted)",
               letterSpacing: "0.09em",
               textTransform: "uppercase",
               fontWeight: 600,

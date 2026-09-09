@@ -12,14 +12,19 @@ export default function ConversationPane({
   currentStepIndex,
 }: ConversationPaneProps) {
   const visibleSteps = dialog.slice(0, currentStepIndex + 1);
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (containerRef.current) {
+      containerRef.current.scrollTo({
+        top: containerRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, [currentStepIndex]);
 
   return (
-    <div className="conversation-scroll-pane">
+    <div ref={containerRef} className="conversation-scroll-pane">
       {visibleSteps.map((step, idx) => {
         const isAgent = step.speaker === "agent";
         return (
@@ -92,7 +97,6 @@ export default function ConversationPane({
           </div>
         );
       })}
-      <div ref={bottomRef} style={{ height: "1px" }} />
     </div>
   );
 }

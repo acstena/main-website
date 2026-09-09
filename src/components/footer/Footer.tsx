@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        borderTop: "1px solid var(--border-subtle)",
-        background: "rgba(5, 7, 12, 0.95)",
+        borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+        background: "#080c16",
         paddingTop: "5rem",
         paddingBottom: "3rem",
         position: "relative",
@@ -32,12 +32,12 @@ export default function Footer() {
         >
           {/* Brand & Identity */}
           <div style={{ maxWidth: "340px" }}>
-            <div style={{ marginBottom: "1rem" }}>
-              <Logo size={36} />
+            <div style={{ marginBottom: "1.2rem" }}>
+              <Logo size={36} theme="dark" />
             </div>
 
-            <p style={{ fontSize: "0.88rem", color: "var(--text-secondary)", lineHeight: 1.6, marginBottom: "1.5rem" }}>
-              Premier digital engineering studio specializing in autonomous AI voicebots, enterprise CRM web applications, high-performance logistics & wellness mobile apps, Figma UI/UX, and Adobe Animate motion graphics.
+            <p style={{ fontSize: "0.88rem", color: "#94a3b8", lineHeight: 1.6, marginBottom: "1.5rem" }}>
+              Premier digital solutions studio building 24/7 AI phone receptionists, custom web portals, field mobile apps, modern website designs, and custom animations that help businesses scale.
             </p>
 
             <div style={{ display: "flex", gap: "0.75rem" }}>
@@ -49,12 +49,12 @@ export default function Footer() {
                   width: "36px",
                   height: "36px",
                   borderRadius: "8px",
-                  background: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid var(--border-subtle)",
+                  background: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "var(--text-secondary)",
+                  color: "#cbd5e1",
                   transition: "all 0.2s ease",
                 }}
                 aria-label="GitHub Profile"
@@ -69,12 +69,12 @@ export default function Footer() {
                   width: "36px",
                   height: "36px",
                   borderRadius: "8px",
-                  background: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid var(--border-subtle)",
+                  background: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "var(--text-secondary)",
+                  color: "#cbd5e1",
                   transition: "all 0.2s ease",
                 }}
                 aria-label="LinkedIn Profile"
@@ -89,12 +89,12 @@ export default function Footer() {
                   width: "36px",
                   height: "36px",
                   borderRadius: "8px",
-                  background: "rgba(255, 255, 255, 0.04)",
-                  border: "1px solid var(--border-subtle)",
+                  background: "rgba(255, 255, 255, 0.06)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  color: "var(--text-secondary)",
+                  color: "#cbd5e1",
                   transition: "all 0.2s ease",
                 }}
                 aria-label="Twitter / X Profile"
@@ -118,8 +118,8 @@ export default function Footer() {
             flexWrap: "wrap",
             gap: "1rem",
             fontSize: "0.82rem",
-            color: "var(--text-muted)",
-            borderTop: "1px solid var(--border-subtle)",
+            color: "#64748b",
+            borderTop: "1px solid rgba(255, 255, 255, 0.08)",
             paddingTop: "2rem",
           }}
         >
@@ -127,13 +127,13 @@ export default function Footer() {
             &copy; {currentYear} acstena Studio. All rights reserved. Precision-engineered with Next.js & GSAP.
           </div>
           <div style={{ display: "flex", gap: "1.5rem" }}>
-            <Link href="/services" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/services" style={{ color: "#94a3b8", textDecoration: "none" }}>
               Privacy & IP Security
             </Link>
-            <Link href="/contact" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/contact" style={{ color: "#94a3b8", textDecoration: "none" }}>
               Terms of Engineering
             </Link>
-            <Link href="/planner" style={{ color: "inherit", textDecoration: "none" }}>
+            <Link href="/planner" style={{ color: "#94a3b8", textDecoration: "none" }}>
               Service Level Agreement (SLA)
             </Link>
           </div>

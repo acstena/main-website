@@ -1,14 +1,14 @@
 import React from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, TrendingUp, Sparkles, CheckCircle2 } from "lucide-react";
+import { ArrowRight, TrendingUp, Sparkles } from "lucide-react";
 import Badge from "@/components/ui/Badge";
 import SeoTransformation from "@/components/seo/SeoTransformation";
 
 export const metadata: Metadata = {
-  title: "Small Business 'Go Digital' & Search Dominance",
+  title: "Small Business 'Go Digital' & Google Search Growth",
   description:
-    "Dominate Google organic search and transform your small business operations. Uncompromising technical SEO, 99+ Core Web Vitals, Schema.org microdata, and 24/7 conversion automation.",
+    "Dominate local Google search and modernize your business operations. Fast-loading websites, Google Maps optimization, and 24/7 automated call capture.",
   alternates: {
     canonical: "https://acstena.com/seo-growth",
   },
@@ -21,7 +21,7 @@ export default function SeoGrowthPage() {
         {/* Header */}
         <div style={{ textAlign: "center", maxWidth: "860px", margin: "0 auto 3.5rem" }}>
           <Badge variant="emerald" icon={<TrendingUp size={14} />} style={{ marginBottom: "1rem" }}>
-            Commercial Intent Search Dominance
+            Google Search Growth
           </Badge>
           <h1
             style={{
@@ -32,7 +32,7 @@ export default function SeoGrowthPage() {
           >
             How Growing Businesses{" "}
             <span className="gradient-text-emerald">
-              Go Digital & Outrank Market Incumbents
+              Go Digital & Outrank Competitors
             </span>
           </h1>
           <p
@@ -42,7 +42,7 @@ export default function SeoGrowthPage() {
               lineHeight: 1.7,
             }}
           >
-            Organic search ranking is uncompromising engineering. We build lightning-fast, server-rendered Next.js web systems that eliminate render-blocking bloat, inject deep semantic microdata, and convert inbound visitors into booked clients around the clock.
+            Getting found on Google brings steady customers. We build lightning-fast modern websites that load instantly on mobile phones, highlight your reviews and services, and convert website searchers into booked clients around the clock.
           </p>
         </div>
 
@@ -62,10 +62,10 @@ export default function SeoGrowthPage() {
           }}
         >
           <Badge variant="emerald" icon={<Sparkles size={14} />} style={{ marginBottom: "1rem" }}>
-            Complimentary Architecture Review
+            Free Growth Review
           </Badge>
           <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-            Request A Technical SEO & Conversion Audit
+            Request A Free Website & Google Ranking Review
           </h2>
           <p
             style={{
@@ -76,15 +76,15 @@ export default function SeoGrowthPage() {
               lineHeight: 1.7,
             }}
           >
-            We will inspect your existing web stack, diagnose missed voice leads, and generate a customized technical roadmap to capture top commercial rankings in your market.
+            We will inspect your current website speed, check where you rank on Google compared to local competitors, and give you a free action plan to get more client calls.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
             <Link href="/contact" className="btn-primary" style={{ background: "var(--obsidian-dark)" }}>
-              <span>Request Technical Audit</span>
+              <span>Request Free Review</span>
               <ArrowRight size={16} />
             </Link>
             <Link href="/planner" className="btn-secondary">
-              <span>View Sprint Timelines</span>
+              <span>View Estimated Timelines</span>
             </Link>
           </div>
         </div>

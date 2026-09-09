@@ -6,7 +6,7 @@ export default function ContactDirectInfo() {
   return (
     <div style={{ maxWidth: "560px" }}>
       <Badge icon={<Sparkles size={14} />} style={{ marginBottom: "1rem" }}>
-        Direct Engineering Consultation
+        Get In Touch
       </Badge>
 
       <h2
@@ -18,7 +18,7 @@ export default function ContactDirectInfo() {
       >
         Let&apos;s Build Your Solution:{" "}
         <span className="gradient-text-cyan-violet">
-          Book A Technical Discovery Sprint
+          Schedule A Free Consultation
         </span>
       </h2>
 
@@ -30,7 +30,7 @@ export default function ContactDirectInfo() {
           marginBottom: "2.5rem",
         }}
       >
-        No high-pressure sales reps. You will speak directly with our senior full-stack and AI systems architects to map your technical requirements, architecture, and timeline.
+        No sales jargon or pressure. Speak directly with our team to discuss your goals, explore what you need, and get a clear project timeline.
       </p>
 
       {/* Guarantees */}
@@ -52,10 +52,10 @@ export default function ContactDirectInfo() {
           </div>
           <div>
             <div style={{ fontWeight: 700, fontSize: "0.95rem" }}>
-              24-Hour Scoping Proposal
+              Clear Proposal Within 24 Hours
             </div>
             <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
-              Receive a comprehensive technical specification, architecture diagram, and dedicated milestone delivery roadmap within 1 business day.
+              Receive a simple, plain-English breakdown of what we will build, how it works, and an exact launch schedule within 1 business day.
             </div>
           </div>
         </div>
@@ -77,10 +77,10 @@ export default function ContactDirectInfo() {
           </div>
           <div>
             <div style={{ fontWeight: 700, fontSize: "0.95rem" }}>
-              100% Intellectual Property Ownership
+              100% Full Ownership
             </div>
             <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.2rem" }}>
-              All source code, Figma design files, Canva assets, and database schemas belong entirely to you with zero vendor lock-in.
+              You own 100% of everything we create: website code, design files, graphics, and accounts. No ongoing hostage fees or lock-ins.
             </div>
           </div>
         </div>

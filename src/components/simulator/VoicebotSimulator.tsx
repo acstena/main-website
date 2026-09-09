@@ -73,11 +73,11 @@ export default function VoicebotSimulator() {
               lineHeight: 1.15,
             }}
           >
-            Experience Live Autonomous AI:{" "}
-            <span className="gradient-text-cyan-violet">Voicebots & Intelligent Agents</span>
+            Experience Live AI:{" "}
+            <span className="gradient-text-cyan-violet">Voicebots That Answer Calls 24/7</span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-            Test our sub-800ms conversational telephony engine. Watch how natural voice speech is transcribed, processed, and written to external CRMs and databases in real time without human intervention.
+            Test our live AI phone receptionist below. Experience how naturally it speaks with callers, understands their inquiries, and automatically reserves appointments on your business calendar.
           </p>
         </div>
 
@@ -106,20 +106,20 @@ export default function VoicebotSimulator() {
                   {selectedScenario.title}
                 </div>
                 <div style={{ fontSize: "0.75rem", color: "#94a3b8" }}>
-                  Target: {selectedScenario.industry}
+                  Industry: {selectedScenario.industry}
                 </div>
               </div>
             </div>
 
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", flexWrap: "wrap" }}>
               <span className="tech-tag" style={{ color: "var(--accent-cyan)" }}>
-                Latency: ~280ms
+                Response: Instant (&lt; 1 sec)
               </span>
               <span className="tech-tag" style={{ color: "var(--accent-emerald)" }}>
-                STT: Deepgram Nova-2
+                Voice: Natural Human Speech
               </span>
               <span className="tech-tag" style={{ color: "var(--accent-violet)" }}>
-                TTS: ElevenLabs Turbo
+                Calendar: Auto-Synced 24/7
               </span>
             </div>
           </div>

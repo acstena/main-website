@@ -17,13 +17,9 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
     <div
       className="glass-card portfolio-detail-grid"
       style={{
-        padding: "clamp(1.5rem, 3vw, 3rem)",
-        display: "grid",
-        gridTemplateColumns: "1fr",
-        gap: "2.5rem",
-        alignItems: "center",
-        border: "1px solid rgba(0, 240, 255, 0.2)",
-        boxShadow: "0 20px 45px rgba(15, 23, 42, 0.08), 0 0 25px rgba(0, 240, 255, 0.06)",
+        padding: "clamp(1.25rem, 3vw, 2.5rem)",
+        border: "1px solid rgba(2, 132, 199, 0.2)",
+        boxShadow: "0 20px 45px rgba(15, 23, 42, 0.06)",
       }}
     >
       {/* Left Column: Details */}
@@ -63,7 +59,7 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
                 marginBottom: "0.3rem",
               }}
             >
-              The Operational Drag (Before)
+              The Challenge Before
             </div>
             <div style={{ fontSize: "0.88rem", color: "var(--text-secondary)" }}>
               {project.challenge}
@@ -88,7 +84,7 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
                 marginBottom: "0.3rem",
               }}
             >
-              The Digital Architecture (Delivered)
+              The Solution Delivered
             </div>
             <div style={{ fontSize: "0.88rem", color: "var(--text-secondary)" }}>
               {project.solution}
@@ -141,8 +137,8 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
           ))}
         </div>
 
-        <Link href="#contact" className="btn-primary">
-          <span>Commission Similar Architecture</span>
+        <Link href="/contact" className="btn-primary">
+          <span>Discuss A Similar Solution For Your Business</span>
           <ArrowRight size={16} />
         </Link>
       </div>
@@ -188,7 +184,7 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
             fontWeight: 600,
           }}
         >
-          Verified Production Snapshot
+          Delivered Project Snapshot
         </div>
       </div>
     </div>

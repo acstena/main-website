@@ -115,7 +115,7 @@ export default function ServiceCard({ service }: { service: ServiceItem }) {
                 marginBottom: "0.75rem",
               }}
             >
-              Core Technical Deliverables
+              What We Deliver
             </div>
             <ul
               style={{
@@ -184,7 +184,7 @@ export default function ServiceCard({ service }: { service: ServiceItem }) {
                 marginBottom: "0.2rem",
               }}
             >
-              Target Business Impact
+              Your Business Result
             </div>
             <div
               style={{
@@ -198,7 +198,7 @@ export default function ServiceCard({ service }: { service: ServiceItem }) {
           </div>
 
           <Link
-            href="#contact"
+            href="/contact"
             style={{
               display: "inline-flex",
               alignItems: "center",
@@ -209,7 +209,7 @@ export default function ServiceCard({ service }: { service: ServiceItem }) {
               textDecoration: "none",
             }}
           >
-            <span>Build this solution</span>
+            <span>Discuss This Solution</span>
             <ArrowRight size={16} />
           </Link>
         </div>

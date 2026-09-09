@@ -6,9 +6,9 @@ import Badge from "@/components/ui/Badge";
 import GoDigitalEstimator from "@/components/estimator/GoDigitalEstimator";
 
 export const metadata: Metadata = {
-  title: "Interactive Architecture & Sprint Planner",
+  title: "Interactive Solution Planner & Launch Timeline",
   description:
-    "Plan your software engineering sprint with acstena. Select your digital solution to view recommended tech stacks, delivery sprint windows, and operational efficiency gains.",
+    "Plan your digital project with acstena. Select your solution to see recommended features, launch timelines, and the efficiency gains you can expect for your business.",
   alternates: {
     canonical: "https://acstena.com/planner",
   },
@@ -17,21 +17,21 @@ export const metadata: Metadata = {
 const sprintProcess = [
   {
     step: "01",
-    title: "Technical Discovery & Architecture Spec",
-    duration: "Sprint Days 1 - 3",
-    description: "Deep dive into your operational bottlenecks, database schema design, and integration touchpoints.",
+    title: "Discovery & Strategy Plan",
+    duration: "Days 1 - 3",
+    description: "We understand your goals, map your customer journey, and outline exactly what we will build for you.",
   },
   {
     step: "02",
-    title: "Rapid Full-Stack Core Engineering",
-    duration: "Sprint Weeks 1 - 2",
-    description: "Production build of voice agent telephony pipelines, Next.js server actions, or mobile offline caching engines.",
+    title: "Design & System Build",
+    duration: "Weeks 1 - 2",
+    description: "We build your custom software, AI assistant, or mobile app, sharing progress updates and interactive previews.",
   },
   {
     step: "03",
-    title: "UAT, Security Audit & Cloud Launch",
-    duration: "Sprint Weeks 2 - 3",
-    description: "Automated regression testing, Core Web Vitals audit, carrier telephony verification, and seamless go-live.",
+    title: "Testing & Live Launch",
+    duration: "Weeks 2 - 3",
+    description: "We test everything thoroughly across phones and computers, train your team, and launch smoothly.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function PlannerPage() {
         {/* Page Header */}
         <div style={{ textAlign: "center", maxWidth: "820px", margin: "0 auto 3.5rem" }}>
           <Badge icon={<Cpu size={14} />} style={{ marginBottom: "1rem" }}>
-            Engineering Scoping Engine
+            Project Planning Tool
           </Badge>
           <h1
             style={{
@@ -51,9 +51,9 @@ export default function PlannerPage() {
               lineHeight: 1.15,
             }}
           >
-            Plan Your Digital Architecture &{" "}
+            Plan Your Digital Solution &{" "}
             <span className="gradient-text-emerald">
-              Deployment Sprints
+              Estimated Launch Timeline
             </span>
           </h1>
           <p
@@ -63,7 +63,7 @@ export default function PlannerPage() {
               lineHeight: 1.7,
             }}
           >
-            Configure your digital transformation target below to calculate recommended engineering stacks, deployment sprint timelines, and measurable operational transformation metrics.
+            Select the type of solution your business needs below to calculate recommended features, estimated turnaround times, and the direct business benefits you can expect.
           </p>
         </div>
 
@@ -74,13 +74,13 @@ export default function PlannerPage() {
         <div style={{ marginTop: "5rem" }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 3rem" }}>
             <Badge variant="emerald" icon={<Clock size={14} />} style={{ marginBottom: "1rem" }}>
-              Predictable Agile Velocity
+              Clear 3-Step Process
             </Badge>
             <h2 style={{ fontSize: "2rem", marginBottom: "0.75rem" }}>
-              How Our Rapid Sprints Operate
+              How We Work With You From Start To Launch
             </h2>
             <p style={{ color: "var(--text-secondary)", fontSize: "1rem" }}>
-              No bloated enterprise agency bureaucracy. Senior engineers shipping working production software every single week.
+              No confusing agency bureaucracy. Clear milestones, weekly progress reviews, and working software delivered on schedule.
             </p>
           </div>
 

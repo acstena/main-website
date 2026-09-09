@@ -3,15 +3,15 @@ import { ProjectCaseStudy } from "@/types";
 export const portfolioProjects: ProjectCaseStudy[] = [
   {
     id: "omnivoice-ai",
-    title: "OmniVoice AI Telephony & Autonomous Receptionist",
+    title: "OmniVoice 24/7 AI Receptionist & Appointment Booking",
     category: "AI & Voicebots",
     clientIndustry: "Healthcare & Multi-Clinic Network",
     summary:
-      "A zero-latency conversational voice agent capable of answering 200+ concurrent inbound patient calls, verifying insurance in real-time, and scheduling appointments directly into the EHR system.",
+      "A natural-sounding AI phone receptionist that answers 200+ patient calls simultaneously, provides answers to common questions, and schedules appointments directly into the clinic calendar with zero hold time.",
     challenge:
-      "Clinic staff were overwhelmed with 1,800+ phone calls weekly, resulting in a 42% missed call rate, lost patient bookings, and prolonged hold times exceeding 8 minutes.",
+      "Clinic front-desk staff were overwhelmed with 1,800+ phone calls weekly, causing a 42% missed call rate, lost patient revenue, and long hold times exceeding 8 minutes.",
     solution:
-      "Engineered an autonomous voice agent using OpenAI Realtime API and Twilio WebRTC. Integrated speech-to-text with medical terminology tuning, bidirectional PostgreSQL EHR sync, and instant SMS confirmation dispatch.",
+      "De-escalated front-desk pressure with an automated AI phone assistant that answers in under 2 seconds, speaks warmly and naturally, books appointments directly into the calendar, and sends instant confirmation text messages.",
     image: "/images/ai_voicebot_showcase.jpg",
     stats: [
       { label: "Missed Calls", value: "0%" },
@@ -19,86 +19,86 @@ export const portfolioProjects: ProjectCaseStudy[] = [
       { label: "Monthly Bookings", value: "+1,420" },
       { label: "Staff Time Saved", value: "32 hrs/wk" }
     ],
-    tags: ["OpenAI Realtime", "Twilio SIP", "WebRTC", "PostgreSQL", "Next.js", "Deepgram"]
+    tags: ["AI Phone Receptionist", "Calendar Auto-Sync", "Instant SMS Alerts", "Zero Hold Time"]
   },
   {
     id: "apexflow-crm",
-    title: "ApexFlow Enterprise CRM & Operational Hub",
+    title: "ApexFlow Custom Operations Portal & Quote Hub",
     category: "Web & Cloud MVP",
-    clientIndustry: "Freight Brokerage & B2B Logistics",
+    clientIndustry: "Freight Brokerage & Logistics",
     summary:
-      "Custom-built enterprise web application replacing 14 fragmented Google Spreadsheets with a unified real-time quote calculation, contract generation, and carrier compliance management system.",
+      "A custom-built web application replacing 14 fragmented spreadsheets with an all-in-one portal for instant freight quote generation, digital contract signing, and real-time load dispatching.",
     challenge:
-      "Brokers spent 45 minutes manually calculating freight quotes, reconciling carrier certificates, and dispatching PDF agreements, causing severe pipeline drag and lost margin opportunities.",
+      "Brokers spent 45 minutes manually calculating freight quotes, reconciling insurance documents, and emailing PDFs back and forth, creating major delays and lost deals.",
     solution:
-      "Architected a Next.js 16 full-stack cloud portal with Supabase real-time subscriptions, dynamic algorithmic freight pricing formulas, instant DocuSign webhooks, and an interactive Kanban dispatch board.",
+      "Built a secure, centralized web dashboard that calculates quotes automatically in seconds, notifies clients via email and SMS, and provides a clear live pipeline for the entire team.",
     image: "/images/web_crm_platform.jpg",
     stats: [
       { label: "Quote Generation", value: "45s (was 45m)" },
-      { label: "Pipeline Velocity", value: "+310%" },
-      { label: "Operational Error Rate", value: "-94%" },
-      { label: "Brokers Onboarded", value: "240+" }
+      { label: "Team Productivity", value: "+310%" },
+      { label: "Order Errors", value: "-94%" },
+      { label: "Active Brokers", value: "240+" }
     ],
-    tags: ["Next.js App Router", "Supabase", "Prisma ORM", "TypeScript", "Tailwind CSS", "Redis"]
+    tags: ["Custom Client Portal", "Instant Quoting", "Digital Signatures", "Live Dashboard"]
   },
   {
     id: "fleetpulse-mobile",
-    title: "FleetPulse Real-Time Dispatch & Telematics App",
+    title: "FleetPulse Field Dispatch & Driver Mobile App",
     category: "Mobile App Development",
-    clientIndustry: "Last-Mile Distribution & Fleet Operators",
+    clientIndustry: "Delivery & Fleet Operations",
     summary:
-      "High-resilience cross-platform mobile application providing delivery drivers with offline turn-by-turn routing, package barcode scanning, digital signature capture, and live telematics telemetry.",
+      "A reliable mobile application for drivers and dispatchers that provides turn-by-turn routing, package barcode scanning, and digital customer signatures—even when cell reception drops entirely.",
     challenge:
-      "Drivers in rural distribution corridors frequently lost cellular connection, crashing legacy web portals and preventing delivery timestamp confirmations.",
+      "Drivers in rural delivery corridors frequently lost cell signal, which caused legacy systems to crash, lost delivery timestamp records, and forced dispatchers to make dozens of check-in calls.",
     solution:
-      "Engineered an offline-first mobile app using React Native and SQLite local caching. Implemented high-efficiency background GPS geofencing that queues telemetry and auto-syncs when LTE is re-established.",
+      "Built an intuitive mobile app that works 100% offline. Drivers capture signatures and photos smoothly, and all records automatically upload the instant signal returns.",
     image: "/images/mobile_logistics_app.jpg",
     stats: [
       { label: "Active Fleet Vehicles", value: "150+ trucks" },
-      { label: "Route Fuel Savings", value: "28%" },
-      { label: "Offline Sync Reliability", value: "99.98%" },
-      { label: "Driver App Rating", value: "4.8 / 5.0" }
+      { label: "Fuel Route Savings", value: "28%" },
+      { label: "Delivery Record Reliability", value: "99.98%" },
+      { label: "Driver Rating", value: "4.8 / 5.0" }
     ],
-    tags: ["React Native", "Expo", "Mapbox SDK", "SQLite", "Node.js", "WebSockets"]
+    tags: ["iOS & Android Apps", "Works Offline", "GPS Live Routing", "Digital Signatures"]
   },
   {
     id: "pulsemind-wellness",
-    title: "PulseMind Spatial Soundscape & Meditation App",
+    title: "PulseMind Audio Meditation & Habit Tracker App",
     category: "Mobile App Development",
-    clientIndustry: "Digital Health & Mindfulness",
+    clientIndustry: "Digital Health & Wellness",
     summary:
-      "Premium audio meditation and breathwork companion featuring spatial ambient sound layering, Apple Health biometric synchronization, and dynamic circadian rhythm routines.",
+      "A calming consumer mobile app featuring guided audio meditations, daily habit tracking, mindful breathing sessions, and seamless in-app subscriptions on Apple and Google devices.",
     challenge:
-      "The client needed to compete with market incumbents by offering sub-millisecond audio loop transitions, haptic-assisted breathing guidance, and frictionless paywall onboarding.",
+      "The client needed to launch a standout mobile experience with seamless audio streaming, habit streaks, and hassle-free membership payments to compete with top wellness apps.",
     solution:
-      "Developed a custom cross-platform audio player using native AVPlayer/ExoPlayer bindings, integrated Apple HealthKit heart-rate feedback, and implemented RevenueCat subscription infrastructure.",
+      "Designed and developed a soothing mobile app with high-definition audio playback, daily routine reminders, and secure one-tap monthly and annual subscriptions.",
     image: "/images/mobile_wellness_app.jpg",
     stats: [
       { label: "Active Subscribers", value: "85,000+" },
-      { label: "Day-30 Retention", value: "44.2%" },
+      { label: "30-Day Retention", value: "44.2%" },
       { label: "App Store Rating", value: "4.9 ★" },
       { label: "Daily Sessions", value: "140k+" }
     ],
-    tags: ["Flutter", "Audio Engine", "HealthKit", "RevenueCat", "Figma UI/UX", "Firebase"]
+    tags: ["iPhone & Android", "Audio Soundscapes", "Member Subscriptions", "Daily Streaks"]
   },
   {
     id: "veloce-design-motion",
-    title: "Veloce Design System & Adobe Animate Motion Suite",
+    title: "Veloce Brand Identity, Design System & Motion Graphics",
     category: "Design & Motion",
-    clientIndustry: "FinTech & Investment Banking",
+    clientIndustry: "Financial Services & Investment",
     summary:
-      "Comprehensive multi-brand design system in Figma paired with interactive Adobe Animate 2D vector animations and Canva executive presentation decks for high-stakes investor roadshows.",
+      "A complete modern brand makeover in Figma, paired with interactive 2D explainer animations in Adobe Animate and executive Canva presentation decks that helped close an oversubscribed investment round.",
     challenge:
-      "The company suffered from inconsistent brand identity across 6 regional websites and needed high-impact interactive visuals to explain complex algorithmic liquidity mechanics to institutional investors.",
+      "The company had an outdated, inconsistent visual appearance across their materials and struggled to explain their complex financial offerings to new clients and prospective investors.",
     solution:
-      "Built an atomic Figma design system with 350+ tokenized components, created interactive HTML5 Canvas explainer animations in Adobe Animate, and produced print & NFC corporate identity collateral.",
+      "Created a unified, modern visual design system, clickable website prototypes, smooth animated product explainers, and luxury digital business cards that built immediate authority.",
     image: "/images/creative_design_motion.jpg",
     stats: [
-      { label: "Frontend Dev Speed", value: "+75%" },
-      { label: "Page Dwell Time", value: "+84%" },
-      { label: "Investor Backing", value: "Oversubscribed" },
-      { label: "Design Token Reusability", value: "100%" }
+      { label: "Development Speed", value: "+75%" },
+      { label: "Website Time-On-Page", value: "+84%" },
+      { label: "Investor Round", value: "Oversubscribed" },
+      { label: "Brand Asset Library", value: "100% Reusable" }
     ],
-    tags: ["Figma Tokens", "Adobe Animate", "HTML5 Canvas", "Canva Pro", "GSAP", "Vector SVG"]
+    tags: ["Interactive Prototypes", "2D Web Animation", "Canva Pitch Decks", "Digital NFC Cards"]
   }
 ];

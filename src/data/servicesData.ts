@@ -4,172 +4,172 @@ export const servicesData: ServiceItem[] = [
   {
     id: "ai-voicebots",
     category: "ai",
-    title: "Conversational AI Voicebots & Autonomous Phone Agents",
-    tagline: "Sub-800ms natural human-like voice receptionists and outbound dialers",
-    badge: "Voice AI & WebRTC",
+    title: "24/7 AI Phone Receptionist & Automated Scheduling",
+    tagline: "Natural human-sounding voice assistant that answers every call and books appointments",
+    badge: "Voice Automation",
     description:
-      "Engineered with ultra-low latency WebSockets, OpenAI Realtime API, Twilio SIP Trunking, and ElevenLabs neural speech. Replaces lost phone leads with 24/7 autonomous scheduling, live CRM sync, and smart transfer escalations.",
+      "Never miss another customer call, emergency inquiry, or quote request. Our AI receptionist answers the phone in seconds, speaks in a natural friendly voice, answers common questions, and books appointments directly into your calendar.",
     deliverables: [
-      "Inbound & outbound telephony integration (Twilio / SIP / Vonage)",
-      "Real-time speech-to-text (Whisper / Deepgram Nova-2)",
-      "Zero-latency conversational intelligence with automated slot-filling",
-      "Direct calendar booking & CRM write-backs (HubSpot, Salesforce, Custom SQL)",
-      "Custom voice persona training & brand acoustic tuning"
+      "Connects directly to your existing business phone number",
+      "Instant call answering with zero customer hold time",
+      "Automatic appointment booking synced to your calendar",
+      "Instant text & email summaries after every completed call",
+      "Smart call forwarding to your mobile for VIP or urgent situations"
     ],
-    techStack: ["OpenAI Realtime", "Twilio SIP", "Deepgram", "ElevenLabs", "Python FastAPI", "WebSockets"],
-    businessImpact: "Eliminates 100% of missed call revenue; answers concurrent calls without hiring human staff.",
+    techStack: ["Natural Voice AI", "Phone Automation", "Calendar Sync", "Instant Alerts"],
+    businessImpact: "Captures 100% of inbound phone leads day or night without hiring extra office staff.",
     iconName: "Mic"
   },
   {
     id: "ai-chatbots",
     category: "ai",
-    title: "Enterprise RAG Chatbots & Internal Knowledge Systems",
-    tagline: "High-accuracy contextual AI trained exclusively on your business data",
-    badge: "LLM & Vector Search",
+    title: "Smart Website Chatbots & Customer Knowledge Assistants",
+    tagline: "Instant, helpful answers for website visitors trained on your exact business knowledge",
+    badge: "Smart AI Chat",
     description:
-      "Proprietary Retrieval-Augmented Generation (RAG) chatbots integrated directly into your web apps and Slack/Teams. Queries internal SOPs, product catalogs, customer histories, and documentation with 0% hallucinations.",
+      "Give every website visitor an immediate, helpful response 24 hours a day. Trained specifically on your service lists, pricing guides, and frequently asked questions, converting curious visitors into booked clients.",
     deliverables: [
-      "Hybrid semantic vector search with Pinecone & pgvector",
-      "Document ingestion pipeline (PDFs, Notion, SQL tables, Zendesk)",
-      "Multi-turn conversational memory and session persistence",
-      "Role-based access control and enterprise encryption",
-      "Live operator handoff protocol with full context transcription"
+      "Custom branded chat window that matches your website style",
+      "Trained on your business documents, services, and FAQs",
+      "Captures visitor contact info and qualifies leads automatically",
+      "Works on your website, customer portal, and messaging channels",
+      "Instant email and text alerts when a hot lead requests a quote"
     ],
-    techStack: ["LangChain", "LlamaIndex", "pgvector", "Pinecone", "Next.js", "FastAPI"],
-    businessImpact: "Resolves 78% of tier-1 customer inquiries instantly with zero human intervention.",
+    techStack: ["Smart AI Chat", "Custom Knowledge Base", "Lead Capture", "Automated Alerts"],
+    businessImpact: "Answers 80%+ of repetitive customer questions immediately, freeing up your team's day.",
     iconName: "Bot"
   },
   {
     id: "web-crm-mvp",
     category: "web",
-    title: "Custom CRM Portals & 3-Week Rapid Cloud MVPs",
-    tagline: "From fragile spreadsheets to high-performance scalable web systems",
-    badge: "Next.js 16 & Serverless",
+    title: "Custom Web Portals, Client CRMs & Rapid Cloud MVPs",
+    tagline: "Replace messy spreadsheets with clean, professional software custom-built for your business",
+    badge: "Custom Web Software",
     description:
-      "Tailor-made web applications designed to solve operational bottlenecks. Whether transitioning manual business processes into a unified CRM or building an investor-ready SaaS MVP from scratch in weeks.",
+      "Stop wrestling with fragmented spreadsheets, lost emails, and chaotic manual workflows. We build clean, secure web portals where your team and clients can manage orders, view job statuses, track invoices, and monitor revenue in one central place.",
     deliverables: [
-      "Scalable multi-tenant Next.js App Router architecture",
-      "Relational database modeling with PostgreSQL, Supabase, and Prisma",
-      "Real-time pipeline kanbans, lead scoring, and automated notifications",
-      "Secure authentication (NextAuth, Clerk, Supabase Auth) with RBAC",
-      "Stripe Billing, subscription management, and webhook listeners"
+      "Custom client management and pipeline dashboards",
+      "Secure accounts for managers, staff, and external clients",
+      "Automated notifications, reminders, and status updates",
+      "Online customer invoicing, payment processing, and receipts",
+      "Fast turnaround — launch a working, high-quality system in weeks"
     ],
-    techStack: ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Prisma", "Tailwind/CSS", "Stripe"],
-    businessImpact: "Accelerates time-to-market by 3x; cuts operational workflow cycle time by 65%.",
+    techStack: ["Custom Web Portals", "Secure Cloud Database", "Automated Billing", "Team Roles"],
+    businessImpact: "Cuts admin and paperwork hours in half, eliminates lost records, and helps your business scale.",
     iconName: "LayoutDashboard"
   },
   {
     id: "mobile-logistics",
     category: "mobile",
-    title: "Logistics, Fleet Telematics & Dispatch Mobile Apps",
-    tagline: "Mission-critical real-time tracking for drivers, dispatchers, and warehouses",
-    badge: "Cross-Platform React Native",
+    title: "Field Operations, Driver Dispatch & Delivery Mobile Apps",
+    tagline: "Keep your drivers, field technicians, and dispatchers connected in real time",
+    badge: "Field Operations App",
     description:
-      "Resilient mobile applications architected for field operators in challenging network conditions. Features offline sync, turn-by-turn routing, barcode scanning, proof-of-delivery signatures, and live dispatcher maps.",
+      "Designed specifically for teams on the move. Whether managing deliveries, field service visits, or fleet dispatch, our mobile apps provide live GPS location tracking, instant job updates, and digital signatures—even when cell service drops.",
     deliverables: [
-      "High-frequency GPS background tracking & geofencing engine",
-      "Offline-first SQLite architecture with automatic cloud delta sync",
-      "Live Mapbox & Google Maps turn-by-turn route optimization",
-      "Digital camera OCR manifest and barcode scanner integration",
-      "Instant push dispatch notifications via FCM / APNS"
+      "Live GPS tracking, route directions, and job dispatching",
+      "Works 100% offline — data syncs automatically when signal returns",
+      "Digital proof of delivery with photo uploads and signature capture",
+      "Instant push alerts for new jobs and customer arrival updates",
+      "Runs smoothly on both iPhones and Android smartphones"
     ],
-    techStack: ["React Native", "Expo", "Mapbox SDK", "SQLite", "Node.js", "WebSockets", "FCM"],
-    businessImpact: "Reduces empty-mile fleet waste by 24% and delivers 99.4% on-time dispatch visibility.",
+    techStack: ["iOS & Android", "Live GPS Tracking", "Works Offline", "Digital Signatures"],
+    businessImpact: "Reduces fuel waste, eliminates lost delivery paperwork, and speeds up customer billing.",
     iconName: "Truck"
   },
   {
     id: "mobile-wellness-ai",
     category: "mobile",
-    title: "Mindfulness, Meditation & Voice-First Wellness Apps",
-    tagline: "Soothing audio soundscapes, biometric tracking, and ambient voice coaching",
-    badge: "Audio Streaming & HealthKit",
+    title: "Lifestyle, Wellness & Interactive Mobile Apps",
+    tagline: "Engaging, beautifully designed iOS & Android apps that keep users coming back daily",
+    badge: "Consumer Mobile Apps",
     description:
-      "Consumer mobile experiences crafted with calming sensory aesthetics. Features seamless background spatial audio playback, Apple HealthKit / Google Fit biometric synchronization, streak gamification, and AI meditation coaching.",
+      "Turn your unique concept into a polished, revenue-generating mobile app. From guided wellness and audio experiences to habit trackers and interactive personal coaches, we build apps that captivate users and look stunning in the App Store.",
     deliverables: [
-      "Low-latency spatial soundscape engine with offline downloading",
-      "Interactive breathing guide circles with haptic feedback vibration",
-      "Biometric heart-rate and sleep integration via Apple HealthKit",
-      "In-app purchase paywalls with RevenueCat (iOS & Android)",
-      "Ambient AI voice conversational mindfulness coach"
+      "Beautiful, intuitive mobile interfaces designed for high engagement",
+      "High-quality audio player with offline listening support",
+      "Daily progress reminders, habit tracking, and streak badges",
+      "In-app subscriptions and secure membership paywalls (Apple & Google)",
+      "Complete launch assistance on both Apple App Store and Google Play"
     ],
-    techStack: ["Flutter / React Native", "TrackPlayer", "HealthKit", "RevenueCat", "OpenAI Audio"],
-    businessImpact: "Achieves >42% 30-day user retention through personalized biometric routines.",
+    techStack: ["iOS & Android Apps", "Audio Streaming", "Member Subscriptions", "Push Notifications"],
+    businessImpact: "Builds a loyal subscriber base with recurring monthly and annual membership revenue.",
     iconName: "HeartPulse"
   },
   {
     id: "figma-uiux",
     category: "design",
-    title: "High-Fidelity Figma UI/UX Design & Design Systems",
-    tagline: "Conversion-optimized interface architecture engineered for rapid development",
-    badge: "Figma Tokens & Prototyping",
+    title: "Modern Website Design & Interactive Prototypes (Figma)",
+    tagline: "See exactly how your website or app will look and feel before a single line of code is built",
+    badge: "Design & Prototyping",
     description:
-      "Every wireframe, screen, and component is architected in Figma using systematic design tokens, auto-layout 5.0, variables, and responsive constraints. Ensures frictionless developer handoff and pixel-perfect execution.",
+      "No surprises or guesswork. We craft clickable, pixel-perfect visual previews of your entire website or digital application in Figma, allowing you to test the layout, color palette, and user flow before development begins.",
     deliverables: [
-      "Complete design system: Typography, colors, spacing tokens, and UI components",
-      "Interactive high-fidelity clickable prototype for user testing and investors",
-      "Information architecture, user flow mapping, and conversion wireframes",
-      "Responsive layout specifications (Mobile, Tablet, Desktop 4K)",
-      "Direct code-ready design token export (CSS/JSON)"
+      "Clickable interactive preview you can open on your phone or laptop",
+      "Clean, modern visual identity tailored to your brand personality",
+      "Mobile-friendly layouts tested across screens of all sizes",
+      "Conversion-focused user journey designed to turn visitors into buyers",
+      "Complete design file library ready for seamless handover"
     ],
-    techStack: ["Figma", "Auto Layout", "Tokens Studio", "FigJam", "Design Systems"],
-    businessImpact: "Decreases frontend engineering rework by 70% and boosts landing page conversion by 35%.",
+    techStack: ["Figma Design", "Interactive Prototype", "Mobile-First Layout", "Design System"],
+    businessImpact: "Saves weeks of revision time and ensures your final launch converts visitors into paying customers.",
     iconName: "Figma"
   },
   {
     id: "canva-branding",
     category: "design",
-    title: "Canva Brand Identity, Business Cards & Marketing Kits",
-    tagline: "Empowering small businesses with maintainable, high-impact visual collateral",
-    badge: "Branding & Print Ready",
+    title: "Brand Identity, Business Cards & Marketing Collateral",
+    tagline: "Professional visual branding and editable marketing assets your team can easily update",
+    badge: "Brand & Marketing Assets",
     description:
-      "Professional brand identity packages engineered so that your internal team can easily edit and reuse assets. Includes print-ready NFC digital business cards, pitch decks, social media kits, and brand manuals.",
+      "Give your business a polished, authoritative market presence. We design clean modern logos, luxury business cards (both print-ready and digital tap-to-share NFC cards), sales pitch decks, and easy-to-edit Canva templates for your ongoing marketing.",
     deliverables: [
-      "Custom business card designs (print-ready CMYK + digital NFC vCard)",
-      "High-impact investor and sales presentation pitch decks",
-      "Reusable Canva brand kit with typography, palettes, and templates",
-      "Omnichannel social media banner and promotional ad packages",
-      "Vector logos and brand style guide documentation"
+      "Modern logo package with versatile variations for web and print",
+      "Premium business card designs (print-ready + digital tap-to-phone vCard)",
+      "Sales presentation pitch decks that impress prospective clients",
+      "Editable social media templates your team can customize in seconds",
+      "Brand style guide covering your typography, colors, and layout rules"
     ],
-    techStack: ["Canva Pro", "Adobe Illustrator", "Vector SVG", "Print CMYK", "vCard NFC"],
-    businessImpact: "Elevates brand perceived value instantly; arms sales teams with assets that close deals.",
+    techStack: ["Brand Strategy", "Canva Pro Templates", "Digital NFC Cards", "Vector Print Files"],
+    businessImpact: "Builds instant trust and credibility, helping you command premium prices for your services.",
     iconName: "Sparkles"
   },
   {
     id: "adobe-animate-motion",
     category: "animation",
-    title: "Adobe Animate 2D Motion Graphics & Web Micro-Interactions",
-    tagline: "Liquid-smooth 60fps vector animations that captivate visitors",
-    badge: "Vector Motion & HTML5 Canvas",
+    title: "Custom 2D Animation & Interactive Web Motion",
+    tagline: "Engaging animated graphics and interactive visuals that bring your website to life",
+    badge: "Motion & Animation",
     description:
-      "Custom 2D character animations, interactive explainer scenes, and UI micro-interactions created in Adobe Animate. Exported into lightweight HTML5 Canvas, SVG, or Lottie formats that load instantly without lagging.",
+      "Static websites blend into the crowd. We create smooth, bespoke 2D animations, interactive product explainers, and dynamic micro-movements that immediately grab visitor attention, explain complex concepts simply, and keep eyes on your page.",
     deliverables: [
-      "Custom vector character rigging, walk cycles, and expressive animation",
-      "Product explainer animations demonstrating complex software features",
-      "Interactive HTML5 Canvas and SVG animations embedded directly into web code",
-      "60fps responsive micro-animations for buttons, loaders, and transitions",
-      "Optimized export pipelines (Canvas, WebM, Lottie JSON, MP4)"
+      "Custom 2D animated product and service explainers",
+      "Lightweight web animations that load instantly without slowing down your site",
+      "Subtle interactive button hover and scrolling effects that feel premium",
+      "Storyboards and custom character illustrations tailored to your narrative",
+      "High-definition video exports for social media and website banners"
     ],
-    techStack: ["Adobe Animate", "CreateJS", "HTML5 Canvas", "Lottie / Bodymovin", "GSAP"],
-    businessImpact: "Increases average website dwell time by +85% and significantly lowers bounce rates.",
+    techStack: ["Adobe Animate", "Smooth Web Motion", "Interactive SVG", "60fps Animation"],
+    businessImpact: "Doubles visitor time-on-page and makes your brand unforgettable compared to ordinary static sites.",
     iconName: "Film"
   },
   {
     id: "seo-transformation",
     category: "seo",
-    title: "Small Business 'Go Digital' & Search Ranking Dominance",
-    tagline: "Technical SEO, Core Web Vitals, and organic local/national Google dominance",
-    badge: "Technical SEO & Schema",
+    title: "Small Business 'Go Digital' & Google Search Growth",
+    tagline: "Get found on Google, attract local customers, and convert searchers into booked calls",
+    badge: "Google Ranking & Growth",
     description:
-      "Targeted at traditional and small businesses seeking to modernize their digital presence. We rebuild legacy web footprints with semantic schema markup, sub-second TTFB speeds, and hyper-targeted commercial keyword funnels.",
+      "Specifically designed for established local and small businesses looking to modernize and dominate their market. We overhaul your digital presence so you rank at the top of Google searches, load instantly on mobile phones, and turn visitors into paying customers.",
     deliverables: [
-      "Full Core Web Vitals audit & 98+ PageSpeed optimization",
-      "Commercial intent keyword clustering and competitive SERP gap analysis",
-      "Rich Schema.org JSON-LD microdata implementation for Google Rich Snippets",
-      "Automated XML sitemaps, robots.txt, and canonical indexing structures",
-      "Local SEO Google Business Profile synchronization & citation strategy"
+      "Google Search & Google Maps optimization for local client inquiries",
+      "Blazing-fast mobile page speeds so customers never bounce away",
+      "High-intent keyword targeting that brings ready-to-buy customers",
+      "Automated review generation guidance and trust badges",
+      "Clear monthly performance reports showing traffic, phone calls, and new leads"
     ],
-    techStack: ["Next.js SSG/ISR", "Schema.org", "Google Search Console", "Semrush Strategy", "Lighthouse"],
-    businessImpact: "Drives top-3 Google rankings for high-intent queries; doubles organic qualified inbound pipeline.",
+    techStack: ["Google Business Optimization", "Mobile Speed Engineering", "Search Ranking Strategy"],
+    businessImpact: "Generates consistent, qualified inbound client inquiries every month without costly ad spend.",
     iconName: "TrendingUp"
   }
 ];

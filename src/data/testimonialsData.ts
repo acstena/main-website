@@ -13,35 +13,35 @@ export const testimonialsList: Testimonial[] = [
     role: "Chief Medical Officer",
     company: "Metro Health Dental Clinics",
     quote:
-      "Our 4 clinical locations were bleeding after-hours emergency bookings. acstena built an autonomous AI voice receptionist integrated into our EHR. We went from 42% missed calls to zero, capturing 1,420 extra patient bookings every month.",
+      "Our 4 clinical locations were bleeding after-hours emergency patient bookings. acstena built an AI phone receptionist connected straight to our appointment calendar. We went from 42% missed calls to zero, capturing 1,420 extra patient appointments every month.",
     metric: "0% Missed Calls (was 42%)",
-    tag: "AI Telephony & Voicebot",
+    tag: "AI Phone Receptionist",
   },
   {
     name: "Samantha Reed",
     role: "VP of Freight Operations",
     company: "SwiftLane Logistics",
     quote:
-      "We were drowning in Google Sheets and lost rate cards. The custom Next.js CRM portal acstena built transformed our brokerage. Quote turnarounds dropped from 45 minutes to 45 seconds, and pipeline velocity jumped over 300%.",
+      "We were drowning in Google Sheets and lost rate cards. The custom cloud portal acstena built transformed our brokerage. Quote turnarounds dropped from 45 minutes to 45 seconds, and team productivity jumped over 300%.",
     metric: "45s Quote Dispatch (was 45m)",
-    tag: "Custom Web CRM & Cloud MVP",
+    tag: "Custom Web Portal & CRM",
   },
   {
     name: "Marcus Sterling",
     role: "Director of Fleet Telematics",
     company: "Midwest Cargo Network",
     quote:
-      "Our drivers work across rural dead zones. The offline-first React Native mobile app they built never drops data. Background GPS telemetry and signature scanning work flawlessly under all conditions.",
-    metric: "28% Fuel Route Efficiency",
-    tag: "Mobile App Development",
+      "Our drivers deliver across rural areas where cell phone signal drops constantly. The mobile app acstena built works completely offline. Drivers capture signatures and photos smoothly, and everything syncs automatically.",
+    metric: "99.98% Record Reliability",
+    tag: "Field Mobile App",
   },
   {
     name: "Elena Rostova",
     role: "Managing Partner",
     company: "Veloce Capital",
     quote:
-      "From pixel-perfect Figma design tokens to liquid-smooth 60fps Adobe Animate interactive motion graphics, the execution was world-class. Our seed roadshow closed oversubscribed ahead of schedule.",
+      "From interactive Figma prototypes to smooth animated graphics and Canva executive pitch decks, the execution was world-class. Our investor roadshow closed oversubscribed ahead of schedule.",
     metric: "Oversubscribed Seed Round",
-    tag: "Figma UI/UX & Adobe Animate",
+    tag: "Website Design & Motion",
   },
 ];

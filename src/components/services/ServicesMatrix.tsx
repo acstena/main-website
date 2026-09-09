@@ -77,7 +77,7 @@ export default function ServicesMatrix() {
       <div className="container">
         {/* Section Header */}
         <div style={{ textAlign: "center", maxWidth: "780px", margin: "0 auto 3.5rem" }}>
-          <Badge style={{ marginBottom: "1rem" }}>Comprehensive Solutions Portfolio</Badge>
+          <Badge style={{ marginBottom: "1rem" }}>Full Suite Of Digital Services</Badge>
           <h2
             style={{
               fontSize: "clamp(2rem, 3.8vw, 3rem)",
@@ -85,11 +85,11 @@ export default function ServicesMatrix() {
               lineHeight: 1.15,
             }}
           >
-            Engineered For Market Dominance:{" "}
-            <span className="gradient-text-cyan-violet">Every Service, Zero Fluff</span>
+            Built To Grow Your Business:{" "}
+            <span className="gradient-text-cyan-violet">Every Solution You Need, Under One Roof</span>
           </h2>
           <p style={{ fontSize: "1.05rem", color: "var(--text-secondary)", lineHeight: 1.7 }}>
-            We eliminate the gap between concept and high-yield production. Whether your business requires a real-time conversational voicebot, an enterprise CRM to retire manual spreadsheets, a logistics mobile app, or pixel-perfect Figma prototypes.
+            We turn your vision into working, high-quality software. Whether your business needs an AI phone receptionist to capture every call, a custom web portal to replace messy spreadsheets, a mobile app for your field team, or modern website design.
           </p>
         </div>
 

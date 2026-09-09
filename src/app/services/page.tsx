@@ -21,7 +21,7 @@ export default function ServicesPage() {
         {/* Page Hero Header */}
         <div style={{ textAlign: "center", maxWidth: "840px", margin: "0 auto 3rem" }}>
           <Badge icon={<Layers size={14} />} style={{ marginBottom: "1rem" }}>
-            Comprehensive Digital Capabilities
+            Complete Digital Solutions
           </Badge>
           <h1
             style={{
@@ -30,9 +30,9 @@ export default function ServicesPage() {
               lineHeight: 1.15,
             }}
           >
-            Full-Spectrum Digital Solutions:{" "}
+            Digital Solutions Built For Growth:{" "}
             <span className="gradient-text-cyan-violet">
-              AI, Web, Mobile & Creative Engineering
+              AI Voice, Web Portals, Mobile Apps & Design
             </span>
           </h1>
           <p
@@ -42,7 +42,7 @@ export default function ServicesPage() {
               lineHeight: 1.7,
             }}
           >
-            From low-latency conversational AI voice receptionists to mission-critical logistics apps and 60fps Adobe Animate vector motion—every system is engineered for scalability and zero operational drag.
+            From 24/7 AI phone receptionists that capture every customer lead to custom business dashboards, field operations apps, and modern website design—every solution is built to give your business an unfair advantage.
           </p>
         </div>
 
@@ -62,10 +62,10 @@ export default function ServicesPage() {
           }}
         >
           <Badge icon={<Sparkles size={14} />} style={{ marginBottom: "1rem" }}>
-            Tailored Engineering Scopes
+            Custom Tailored Solutions
           </Badge>
           <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
-            Ready To Architecture Your Custom Solution?
+            Ready To Upgrade Your Digital Presence?
           </h2>
           <p
             style={{
@@ -76,15 +76,15 @@ export default function ServicesPage() {
               lineHeight: 1.7,
             }}
           >
-            Plan your technical delivery sprint, choose your engineering stack, or consult directly with our senior full-stack architects.
+            Tell us about your business goals. We will provide an exact timeline, a working preview, and a launch plan tailored to your budget and needs.
           </p>
           <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/planner" className="btn-primary">
-              <span>Launch Sprint Planner</span>
+            <Link href="/contact" className="btn-primary">
+              <span>Book Free Discovery Call</span>
               <ArrowRight size={16} />
             </Link>
-            <Link href="/contact" className="btn-secondary">
-              <span>Book Technical Discovery</span>
+            <Link href="/planner" className="btn-secondary">
+              <span>Explore Project Planner</span>
             </Link>
           </div>
         </div>
