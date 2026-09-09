@@ -33,7 +33,7 @@ export default function ScenarioTabs({
               display: "flex",
               alignItems: "center",
               gap: "0.6rem",
-              padding: "0.7rem 1.4rem",
+              padding: "clamp(0.45rem, 2vw, 0.7rem) clamp(0.75rem, 2.5vw, 1.4rem)",
               borderRadius: "var(--radius-md)",
               border: isSelected
                 ? "1px solid var(--accent-cyan)"
@@ -47,7 +47,7 @@ export default function ScenarioTabs({
               cursor: "pointer",
               transition: "all 0.2s ease",
               fontWeight: 600,
-              fontSize: "0.9rem",
+              fontSize: "clamp(0.8rem, 2vw, 0.9rem)",
             }}
           >
             <Activity

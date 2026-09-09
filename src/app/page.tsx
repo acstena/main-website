@@ -87,7 +87,7 @@ export default function Home() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))",
               gap: "1.75rem",
               marginBottom: "3rem",
             }}
@@ -274,13 +274,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-              gap: "1.75rem",
-            }}
-          >
+          <div className="responsive-2col-grid">
             <div
               className="glass-card"
               style={{

@@ -151,8 +151,9 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
           aspectRatio: "4 / 3",
           borderRadius: "var(--radius-lg)",
           overflow: "hidden",
-          border: "1px solid rgba(255, 255, 255, 0.15)",
-          boxShadow: "0 20px 50px rgba(0, 0, 0, 0.8)",
+          border: "1px solid rgba(15, 23, 42, 0.1)",
+          boxShadow: "0 15px 35px -5px rgba(15, 23, 42, 0.1), 0 0 0 1px rgba(15, 23, 42, 0.06)",
+          background: "#ffffff",
         }}
       >
         <Image
@@ -160,28 +161,23 @@ export default function CaseStudyCard({ project }: { project: ProjectCaseStudy }
           alt={project.title}
           fill
           sizes="(max-width: 1024px) 100vw, 600px"
-          style={{ objectFit: "cover" }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "linear-gradient(180deg, rgba(5,7,12,0.05) 0%, rgba(5,7,12,0.5) 100%)",
-          }}
+          style={{ objectFit: "cover", objectPosition: "center top" }}
+          priority
         />
         <div
           style={{
             position: "absolute",
             bottom: "1rem",
             left: "1rem",
-            padding: "0.4rem 0.85rem",
+            padding: "0.4rem 0.9rem",
             borderRadius: "9999px",
-            background: "rgba(10, 14, 26, 0.85)",
-            backdropFilter: "blur(10px)",
-            border: "1px solid rgba(255, 255, 255, 0.15)",
+            background: "rgba(15, 23, 42, 0.88)",
+            backdropFilter: "blur(12px)",
+            border: "1px solid rgba(255, 255, 255, 0.2)",
             fontSize: "0.75rem",
-            color: "var(--text-primary)",
+            color: "#ffffff",
             fontWeight: 600,
+            boxShadow: "0 4px 12px rgba(15, 23, 42, 0.2)",
           }}
         >
           Delivered Project Snapshot

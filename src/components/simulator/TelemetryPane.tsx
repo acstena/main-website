@@ -57,7 +57,7 @@ export default function TelemetryPane({
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 180px), 1fr))",
           gap: "0.75rem",
           marginBottom: "1.5rem",
         }}

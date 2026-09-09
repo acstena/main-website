@@ -34,13 +34,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))",
-            gap: "1.75rem",
-          }}
-        >
+        <div className="responsive-3col-grid">
           {testimonialsList.map((t) => (
             <TestimonialCard key={t.name} testimonial={t} />
           ))}

@@ -65,14 +65,7 @@ export default function VoiceAiPage() {
         </div>
 
         {/* Telephony Performance Specs Grid */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "1.5rem",
-            marginBottom: "4.5rem",
-          }}
-        >
+        <div className="responsive-3col-grid" style={{ marginBottom: "4.5rem" }}>
           {telephonySpecs.map((spec) => (
             <div
               key={spec.title}

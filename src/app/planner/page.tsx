@@ -84,13 +84,7 @@ export default function PlannerPage() {
             </p>
           </div>
 
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "1.5rem",
-            }}
-          >
+          <div className="responsive-3col-grid">
             {sprintProcess.map((p) => (
               <div
                 key={p.step}

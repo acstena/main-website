@@ -64,8 +64,8 @@ export default function ConversationPane({
 
             <div
               style={{
-                maxWidth: "78%",
-                padding: "1rem 1.25rem",
+                maxWidth: "88%",
+                padding: "clamp(0.75rem, 2.5vw, 1.25rem)",
                 borderRadius: isAgent
                   ? "4px 16px 16px 16px"
                   : "16px 4px 16px 16px",

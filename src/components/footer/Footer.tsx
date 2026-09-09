@@ -126,7 +126,7 @@ export default function Footer() {
           <div>
             &copy; {currentYear} acstena Studio. All rights reserved. Precision-engineered with Next.js & GSAP.
           </div>
-          <div style={{ display: "flex", gap: "1.5rem" }}>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "0.75rem 1.5rem" }}>
             <Link href="/services" style={{ color: "#94a3b8", textDecoration: "none" }}>
               Privacy & IP Security
             </Link>

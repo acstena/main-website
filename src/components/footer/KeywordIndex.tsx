@@ -5,7 +5,7 @@ export default function KeywordIndex() {
   return (
     <div
       style={{
-        padding: "1.75rem",
+        padding: "clamp(1rem, 3vw, 1.75rem)",
         borderRadius: "16px",
         background: "rgba(255, 255, 255, 0.03)",
         border: "1px solid rgba(255, 255, 255, 0.08)",
